@@ -4492,7 +4492,9 @@ div.icon-text {
 }
 .image.is-128x128 {
   width: 256px;
+  max-width: 100%;
   min-height:  256px;
+
 }
 
 .loader {
@@ -20816,6 +20818,13 @@ has-background-danger.is-hoverable:active {
 @media screen and (max-width: 768px) {
   .has-text-centered-mobile {
     text-align: center !important;
+  }
+
+  .image.is-128x128{
+    width: 64px;
+    max-width: 100%;
+    min-height:  64px;
+
   }
 }
 @media screen and (min-width: 769px), print {
