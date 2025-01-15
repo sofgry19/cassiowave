@@ -2918,7 +2918,7 @@ th:not([align]) {
   --bulma-hr-background-color: var(--bulma-background);
   --bulma-hr-height: 2px;
   --bulma-hr-margin: 1.5rem 0;
-  --bulma-strong-color: var(--bulma-text-strong);
+  --bulma-strong-color: #0D0B0B;
   --bulma-strong-weight: var(--bulma-weight-semibold);
   --bulma-pre-font-size: 0.875em;
   --bulma-pre-padding: 1.25rem 1.5rem;
@@ -3051,7 +3051,7 @@ span {
 }
 
 strong {
-  color: var(--bulma-strong-color);
+  color: #0D0B0B;
   font-weight: var(--bulma-strong-weight);
 }
 
