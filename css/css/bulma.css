@@ -20827,6 +20827,10 @@ has-background-danger.is-hoverable:active {
     min-height:  96px;
 
   }
+
+  .content.is-large {
+    font-size: var(--bulma-size-normal);
+  }
 }
 @media screen and (min-width: 769px), print {
   .has-text-centered-tablet {
