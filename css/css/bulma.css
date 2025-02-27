@@ -7085,7 +7085,7 @@ button.dropdown-item.is-selected {
   .modal-card {
     margin: 0 auto;
     max-height: calc(100vh - var(--bulma-modal-content-spacing-tablet));
-    width: var(--bulma-modal-content-width);
+    width: 90%;
   }
 }
 
