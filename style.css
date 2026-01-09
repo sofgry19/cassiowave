@@ -7,7 +7,7 @@ img{
 
 .column1 {
   float: left;
-  width: 33.33%;
+  width: 20%;
   height: 2000px;
   background-color: #F9F5EC;
   padding-top: 1rem;
@@ -16,5 +16,10 @@ img{
 .column {
   float: right;
   width: 60%;
+}
 
+.ab{
+  float: inline-start;
+  width: 60%;
+  margin-left: 10%;
 }
