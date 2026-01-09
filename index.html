@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cassiowave Portfolio</title>
-    <link rel="stylesheet" href="css/css/bulma.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/anka-coder" type="text/css"/>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script>document.addEventListener('DOMContentLoaded', () => {
-  // Functions to open and close a modal
-  function openModal($el) {
-    $el.classList.add('is-active');
-  }
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Cassiowave Portfolio</title>
+      <link rel="stylesheet" href="css/css/bulma.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+       <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/anka-coder" type="text/css"/>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+     <!-- Entire bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.bundle.js"></script>
+        <script>document.addEventListener('DOMContentLoaded', () => {
+      // Functions to open and close a modal
+      function openModal($el) {
+        $el.classList.add('is-active');
+      }
 
-  function closeModal($el) {
-    $el.classList.remove('is-active');
-  }
+      function closeModal($el) {
+        $el.classList.remove('is-active');
+      }
 
-  function closeAllModals() {
-    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
-      closeModal($modal);
-    });
-  }
+      function closeAllModals() {
+        (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+          closeModal($modal);
+        });
+      }
 
-  // Add a click event on buttons to open a specific modal
-  (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
-    const modal = $trigger.dataset.target;
-    const $target = document.getElementById(modal);
+      // Add a click event on buttons to open a specific modal
+      (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+        const modal = $trigger.dataset.target;
+        const $target = document.getElementById(modal);
 
-    $trigger.addEventListener('click', () => {
-      openModal($target);
-    });
-  });
+        $trigger.addEventListener('click', () => {
+          openModal($target);
+        });
+      });
 
-  // Add a click event on various child elements to close the parent modal
-  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
-    const $target = $close.closest('.modal');
+      // Add a click event on various child elements to close the parent modal
+      (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+        const $target = $close.closest('.modal');
 
-    $close.addEventListener('click', () => {
-      closeModal($target);
-    });
-  });
+        $close.addEventListener('click', () => {
+          closeModal($target);
+        });
+      });
 
-  // Add a keyboard event to close all modals
-  document.addEventListener('keydown', (event) => {
-    if(event.key === "Escape") {
-      closeAllModals();
-    }
-  });
-});</script>
+      // Add a keyboard event to close all modals
+      document.addEventListener('keydown', (event) => {
+        if(event.key === "Escape") {
+          closeAllModals();
+        }
+      });
+    });</script>
   </head>
   <body>
 
@@ -59,80 +61,80 @@
     <aside class="menu">
     <p class="menu-label">Cassiowave</p>
     <ul class="menu-list">
-      <li><a class="is-active" style="background-color:#E432A3">Product Design</a></li>
-      <li><a href="apps.html" style="background-color:#F9F5EC">Apps & Website</a></li>
-      <li><a href="cc.html"  style="background-color:#F9F5EC">Cassio Crafts</a></li>
+      <li><a class="is-active" style="background-color:#E432A3">Case Studies</a></li>
+      <li><a href="apps.html" style="background-color:#F9F5EC">Digital Design</a></li>
+      <li><a href="cc.html"  style="background-color:#F9F5EC">Personal Projects</a></li>
       <li><a href="ab.html" style="background-color:#F9F5EC">About Me</a></li>
       <li><a href="assets/resume.pdf" style="background-color:#F9F5EC">Resume</a></li>
-      <li><img src="assets/sofia2.gif" width="100%" height="100%" alt="Sofia Grytsenko"></li>
+      <li><img src="assets/sofia2.gif" style="margin-top: auto" width="100%" height="100%" alt="Sofia Grytsenko"></li>
   </ul>
   </aside>
   </div>
-  <div class="columns is-desktop">
-  <div class="column">
-  <div class="box" style="background-color:#C6F57A;">
-  <article class="media">
-    <div class="media-left">
-      <figure class="image is-128x128">
-        <img  class="image is-128x128" src="assets/cassini.png" alt="Image" />
-      </figure>
-    </div>
-    <div class="media-content">
-      <div  style="font-family: Kanit;" class="content is-large">
-        <h5>
-          <strong>Cassini's Journey</strong>
-          <br />
-        </h5>
+  <section id="Floated" class="columns is-desktop">
+  <article class="dropzone column">
+    <h1> Go ahead. Rearrange the work. </h1>
+      <span class="item1 isDraggable">
+        <div class="box" tabindex="0" style="background-color:#C6F57A; cursor:grab;">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <img  class="image is-128x128" src="assets/h20/h2oHero.png" alt="Image" />
+                </figure>
+              </div>
+              <div class="media-content">
+                <div  style="font-family: Kanit;" class="content is-large">
+                  <h5>
+                    <strong>Oasis: Water Cooler of the Future</strong>
+                    <br />
+                  </h5>
+                </div>
+              </div>
+            </article>
+            <button class="js-modal-trigger" data-target="modal-js-example1">
+              <a href="cs_ho.html"> Read More </a>
+            </button>
       </div>
-    </div>
-  </article>
+    </span>
 
-  <button class="js-modal-trigger" data-target="modal-js-example1">
-    Read More
-  </button>
+    <span class="item2 isDraggable">
+      <div class="box item2 isDraggable" tabindex="0" style="background-color:#8CD4EA; cursor:grab;">
+          <article class="media">
+            <div class="media-content">
+              <div style="font-family: Kanit;" class="content is-large">
+                <h5>
+                  <strong>Cool Dogs: The Toy Series</strong>
+                  <br />
+                </h5>
+              </div>
+            </div>
+              <div class="media-right">
+              <figure class="image is-128x128">
+                <img  class="image is-128x128" src="assets/cooldogs/cooldogshero.png" alt="gif" />
+              </figure>
+              </div>
+          </article>
+          <button class="js-modal-trigger" data-target="modal-js-example2">
+            <a href="cs_cc.html"> Read More </a>
+          </button>
+      </div>
+    </span>
 
-</div>
-
-<div class="box" style="background-color:#8CD4EA;">
-<article class="media">
-  <div class="media-content">
-    <div style="font-family: Kanit;" class="content is-large">
-      <h5>
-        <strong>Cool Dogs: The Series</strong>
-        <br />
-      </h5>
-    </div>
-  </div>
-    <div class="media-right">
-    <figure class="image is-128x128">
-      <img  class="image is-128x128" src="assets/dogs.gif" alt="gif" />
-    </figure>
-    </div>
 </article>
 
-<button class="js-modal-trigger" data-target="modal-js-example2">
-  Read More
-</button>
+<div class="dropzone column">
+  <h1> <br> </h1>
 
-
-
-</div>
-</div>
-
-<div class="column">
-<div class="box" style="background-color:#FFBFD5;">
-
-
+<div class="box isDraggable" style="background-color:#FFBFD5; cursor:grab;">
 <article class="media">
   <div class="media-left">
     <figure class="image is-128x128">
-      <img  class="image is-128x128" src="assets/Tomogachi.png" alt="Image" />
+      <img  class="image is-128x128" src="assets/tg/Tomogachi.png" alt="Image" />
     </figure>
   </div>
   <div class="media-content">
     <div style="font-family: Kanit;" class="content is-large">
       <h5>
-        <strong>Peaches: Digital Pet</strong>
+        <strong>Digital Pet: Modern Tamagotchi</strong>
         <br />
       </h5>
     </div>
@@ -140,207 +142,46 @@
 </article>
 
 <button class="js-modal-trigger" data-target="modal-js-example3">
-  Read More
+  <a href="cs_tg.html"> Read More </a>
 </button>
 
 </div>
 
-<div class="box" style="background-color:#FECD12;">
+<div class="box isDraggable" style="background-color:#FECD12; cursor:grab;">
 
 <article class="media">
-  <div class="media-left">
-    <figure class="image is-128x128">
-      <img class="image is-128x128" src="assets/mirror.png" alt="Image" />
-    </figure>
-  </div>
   <div class="media-content">
     <div style="font-family: Kanit;" class="content is-large">
       <h5>
-        <strong>CyberFit: AR Mirror App</strong>
+        <strong>Mother May I: Dating App Plug-In</strong>
         <br />
       </h5>
     </div>
   </div>
+  <div class="media-right">
+    <figure class="image is-128x128">
+      <img class="image is-128x128" src="assets/mmi/mmifinal.png" alt="Image" />
+    </figure>
+  </div>
 </article>
 
 <button class="js-modal-trigger" data-target="modal-js-example4">
-  Read More
+  <a href="cs_mmi.html"> Read More </a>
 </button>
 
 </div>
 
 </div>
-</div>
+</section>
 
-<div id="modal-js-example1" class="modal">
-  <div class="modal-background"></div>
+<script>
 
-  <div class="modal-content">
-    <div class="box">
-      <p>Figma</p>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Cassini Interactive Poster</p>
-        </header>
-        <section class="modal-card-body">
-          <!-- Content ... -->
-          <div class="content">
-          <h1> The Problem </h1>
-          <h4>College Students are not engaging with science content outside of their major. </h4>
-          <img width="50%" height= "50%" src="assets/moon.gif" alt="Moon Gif" />
-          <h1> Research & Sketches </h1>
-          <h4>  Gen Z learners prefer aural, visual, and kinesthetic learning as they seek and engage with online resources such as virtual simulations and YouTube. - Science Direct  </h4>
-          <p>I started with competitve analysis' of other space infographic posters and specifically ones that covered spacecrafts. Then came the pencil sketching process and creating my flat posters. Once I had my final flat poster, I moved on to creatng the interactive web prototype.</p>
-          <img  width="50%" height= "50%" src="assets/spacework.png" alt="Image" />
-          <h1> Solution & Final Prototype </h1>
-          <h3>Role: Graphic and Interaction Designer</h3>
-          <p> A fully interactive infographic poster about the Cassini-Hyugens Spacecraft. Included in the Figma file are sketches, interactions of a flat poster, a final flat poster, and all of the progress for the interaction. It was a two-part project illustrating how interaction can hide information and make intaking information more manageable by the user. </p>
-          <iframe class="container" width="800" height="450" src="https://embed.figma.com/proto/liclr7lKApuqfBSvX3y90o/Storyboard?page-id=0%3A1&node-id=191-228&p=f&viewport=2448%2C1247%2C0.06&scaling=scale-down&content-scaling=fixed&starting-point-node-id=191%3A228&embed-host=share" allowfullscreen></iframe>
-        </div>
-        </section>
-        <footer class="modal-card-foot">
-          <div class="buttons">
-            <button class="button">Close</button>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </div>
-
-  <button class="modal-close is-large" aria-label="close"></button>
-</div>
-
-<div id="modal-js-example2" class="modal">
-  <div class="modal-background"></div>
-
-  <div class="modal-content">
-    <div class="box">
-      <p>Fabric, LED Lights</p>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Cool Dogs: The Series</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <!-- Content ... -->
-          <div class="content">
-          <h1> The Problem </h1>
-          <h4>Young adults and teens are in an all-time high loneliness epidemic.</h4> <p> In reaction to this, they are turning back to the comforts of their youth: toys, trinkets, and kid-ulting.</p>
-          <h1> Research & Sketches </h1>
-          <h4> The idea of COOL DOG(S) was born from the need that young adults have for companionship, and my own love for trinkets and cute plush.  </h4>
-          <img src="assets/dogsketch.jpg" alt="Image" />
-          <img src="assets/dogs2.gif" alt="Image" />
-          <h1> Solution & Final Prototype </h1>
-          <h4> Role: Product Designer and Producer </h4>
-          <p> Cool Dog(s) is a unique and heartwarming blind box plushie experience that blends the excitement of mystery with the joy of companionship. Created for young adults seeking a sense of comfort and connection, Cool Dog(s) brings together the charm of adorable plush toys with a playful, interactive twist.       </p>
-          <img  width="50%" height= "50%"  src="assets/cooldogs.PNG" alt="First Dog" />
-          <img src="assets/dog2.JPG" alt="First Dog" />
-          <p>The user would purchase a Blind Box (A blind box is a sealed package that contains a random item, making the contents a mystery until opened. Blind boxes are a popular way to collect toys, and they can add an element of surprise and excitement to the unboxing experience. ) in order to get 1 of 5 DOGS. Each dog comes with a different light up body part and accessory.</p>
-          <img src="assets/blue.JPG" alt="Image" />
-          <img src="assets/dogs.JPG" alt="Both Dogs" />
-        </div>
-        </section>
-        <footer class="modal-card-foot">
-          <div class="buttons">
-            <button class="button">Close</button>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </div>
-
-  <button class="modal-close is-large" aria-label="close"></button>
-</div>
+new Draggable.Swappable(document.querySelectorAll('.dropzone'), {
+draggable: '.isDraggable'
+});
 
 
-<div id="modal-js-example3" class="modal">
-  <div class="modal-background"></div>
-
-  <div class="modal-content">
-    <div class="box">
-      <p>Figma</p>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Modern Tamagotchi</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <!-- Content ... -->
-          <div class="content">
-          <h1> The Problem </h1>
-          <h4> The classic Tamagotchi device is faced with some usability issues.</h4>
-          <p> 1. Unlabled Buttons <br> 2. User can not go back in their selections. <br> 3. Small Screen </p>
-          <img src="assets/tomo.gif" alt="Tomogachi Gif" />
-          <h1> Research & Sketches </h1>
-          <h4> "I work from home so it's nice to be able to pause a stressful interaction to take 5 minutes to check on my little guys." - Tamagotchi User</h4>
-          <p> The Tamagotchi shell is stated by many users as why they are so attracted to the device. I wanted to reinvoke those feelings and use a nostalgic shell design, like a T.V or iPod. </p>
-          <img src="assets/Process Work.png" alt="Image" />
-          <p> This Tamagotchi includes a Guinea Pig character, inapired by the everyday activities guinea pig owners have to do.</p>
-          <img src="assets/Style(1).png" alt="Image" />
-          <p> After some user testing, the shell was simplified into a shape resembling the orgininal iPod from Apple. It's simple controls and iconic shape is perfect for a modern Tamagotchi.</p>
-          <img src="assets/SIte Map.png" alt="Image" />
-          <h1> Solution & Final Prototype </h1>
-          <h4> Role: Product Designer and Producer </h4>
-          <p> This is a fully interactive experience, prototyped in Figma, optimized for an iPod-like device. The app captures the nostalgic charm of the original Tamagotchi while utilizing modern interface design principles to enhance the user experience. The prototype showcases a seamless user interface with clean, minimalistic icons and intuitive navigation. </p>
-          <iframe class="container"  width="800" height="450" src="https://embed.figma.com/proto/7OVS3TvmP1VmroUrL3IJcU/TOMOGACHI?page-id=105%3A4681&node-id=118-3180&starting-point-node-id=209%3A9255&scaling=scale-down&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>        </section>
-        </div>
-        </section>
-        <footer class="modal-card-foot">
-          <div class="buttons">
-            <button class="button">Close</button>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </div>
-
-  <button class="modal-close is-large" aria-label="close"></button>
-</div>
-
-
-<div id="modal-js-example4" class="modal">
-  <div class="modal-background"></div>
-
-  <div class="modal-content">
-    <div class="box">
-      <p>Figma</p>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">CyberFit</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <!-- Content ... -->
-          <div class="content">
-          <h1> The Problem </h1>
-          <h4>Online shoppers struggle to visualize how clothes will fit and look on their bodies, relying on static images or poorly fitting model shots. </h4> <p>This uncertainty leads to decision fatigue, higher return rates, and a less satisfying shopping experience.</p>
-          <img width="50%" height= "50%" src="assets/cyberfit.gif" alt="Image" />
-          <h1> Research & Sketches </h1>
-          <p>What if the shopping experience can be combined with your everyday getting ready process?</p>
-          <p>To begin, I started with collecting information on the everyday users of online shopping apps.</p>
-          <img src="assets/cfuser1.png" alt="Image" />
-          <img src="assets/cfuser2.png" alt="Image" />
-          <h4>Competitive Analysis</h4>
-          <p>I also took a look at what current online shopping platforms are doing to address these consumer issues.</p>
-          <img src="assets/cfcomp1.png" alt="Image" />
-          <img src="assets/cfcomp2.png" alt="Image" />
-          <h1> Solution & Final Prototype </h1>
-          <h4> Role: Product Designer and Producer </h4>
-          <img src="assets/cf1.png" alt="Wire Images" />
-          <img src="assets/cf2.png" alt="Image" />
-          <p>CyberFit is a virtual styling app that allows users to explore and experiment with clothing items in a fun, intuitive, and interactive way. The app combines elements of virtual try-ons and style inspiration boards to create a fully immersive fashion experience, helping users visualize how outfits will look on them, offering personalized styling recommendations, and eliminating the guesswork from online shopping.</p>
-         <iframe class="container" width="800" height="450" src="https://embed.figma.com/proto/LNUGH3pY1LIGA9FfQxjpob/CYBERFIT?page-id=64%3A122&node-id=65-123&p=f&viewport=339%2C601%2C0.2&scaling=contain&content-scaling=fixed&starting-point-node-id=65%3A123&embed-host=share" allowfullscreen></iframe>        </section>
-        <footer class="modal-card-foot">
-          <div class="buttons">
-            <button class="button">Close</button>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </div>
-
-  <button class="modal-close is-large" aria-label="close"></button>
-</div>
+</script>
 
   </body>
 </html>

@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cassiowave Portfolio</title>
-    <link rel="stylesheet" href="css/css/bulma.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/anka-coder" type="text/css"/> 
-    <script>document.addEventListener('DOMContentLoaded', () => {
-  // Functions to open and close a modal
-  function openModal($el) {
-    $el.classList.add('is-active');
-  }
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Cassiowave Portfolio</title>
+      <link rel="stylesheet" href="css/css/bulma.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+       <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/anka-coder" type="text/css"/>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+     <!-- Entire bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.bundle.js"></script>
+        <script>document.addEventListener('DOMContentLoaded', () => {
+      // Functions to open and close a modal
+      function openModal($el) {
+        $el.classList.add('is-active');
+      }
 
-  function closeModal($el) {
-    $el.classList.remove('is-active');
-  }
+      function closeModal($el) {
+        $el.classList.remove('is-active');
+      }
 
-  function closeAllModals() {
-    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
-      closeModal($modal);
-    });
-  }
+      function closeAllModals() {
+        (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+          closeModal($modal);
+        });
+      }
 
-  // Add a click event on buttons to open a specific modal
-  (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
-    const modal = $trigger.dataset.target;
-    const $target = document.getElementById(modal);
+      // Add a click event on buttons to open a specific modal
+      (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+        const modal = $trigger.dataset.target;
+        const $target = document.getElementById(modal);
 
-    $trigger.addEventListener('click', () => {
-      openModal($target);
-    });
-  });
+        $trigger.addEventListener('click', () => {
+          openModal($target);
+        });
+      });
 
-  // Add a click event on various child elements to close the parent modal
-  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
-    const $target = $close.closest('.modal');
+      // Add a click event on various child elements to close the parent modal
+      (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+        const $target = $close.closest('.modal');
 
-    $close.addEventListener('click', () => {
-      closeModal($target);
-    });
-  });
+        $close.addEventListener('click', () => {
+          closeModal($target);
+        });
+      });
 
-  // Add a keyboard event to close all modals
-  document.addEventListener('keydown', (event) => {
-    if(event.key === "Escape") {
-      closeAllModals();
-    }
-  });
-});</script>
+      // Add a keyboard event to close all modals
+      document.addEventListener('keydown', (event) => {
+        if(event.key === "Escape") {
+          closeAllModals();
+        }
+      });
+    });</script>
   </head>
   <body>
 
@@ -56,190 +61,102 @@
     <aside class="menu">
     <p class="menu-label">Cassiowave</p>
     <ul class="menu-list">
-      <li><a href="index.html" style="background-color:#F9F5EC">Product Design</a></li>
-      <li><a class="is-active"  style="background-color:#E432A3">Apps & Website</a></li>
-      <li><a href="cc.html" style="background-color:#F9F5EC">Cassio Crafts</a></li>
+      <li><a  href="index.html" style="background-color:#F9F5EC">Case Studies</a></li>
+      <li><a class="is-active" style="background-color:#E432A3">Digital Design</a></li>
+      <li><a href="cc.html"  style="background-color:#F9F5EC">Personal Projects</a></li>
       <li><a href="ab.html" style="background-color:#F9F5EC">About Me</a></li>
       <li><a href="assets/resume.pdf" style="background-color:#F9F5EC">Resume</a></li>
-      <li><img src="assets/sofia2.gif" width="100%" height="100%" alt="Sofia Grytsenko"></li>
+      <li><img src="assets/sofia2.gif" style="margin-top: auto" width="100%" height="100%" alt="Sofia Grytsenko"></li>
   </ul>
   </aside>
   </div>
-  <div class="columns is-desktop">
-  <div class="column">
+  <section id="Floated" class="columns is-desktop">
+  <article class="dropzone column">
+      <span class="item1 isDraggable">
+        <div class="box" tabindex="0" style="background-color:#C6F57A; cursor:grab;">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <img  class="image is-128x128" src="assets/3D/fishsynth.png" alt="Image" />
+                </figure>
+              </div>
+              <div class="media-content">
+                <div  style="font-family: Kanit;" class="content is-large">
+                  <h5>
+                    <strong>3D Projects</strong>
+                    <br />
+                  </h5>
+                </div>
+              </div>
+            </article>
+            <button class="js-modal-trigger" data-target="modal-js-example1">
+              <a href="#"> Read More </a>
+            </button>
+      </div>
+    </span>
 
-<div class="box"  style="background-color:#8CD4EA;">
-<article class="media">
-  <div class="media-content">
-    <div class="content is-large">
-      <p>
-        <strong>Drip Coffee: Mobile App</strong>
-        <br />
-      </p>
-    </div>
-  </div>
-  <div class="media">
-  <div class="media-right">
-    <figure class="image is-128x128">
-      <img class="image is-128x128" src="assets/iPhone 16.png" alt="Image" />
-    </figure>
-  </div>
-  </div>
+    <span class="item2 isDraggable">
+      <div class="box item2 isDraggable" tabindex="0" style="background-color:#8CD4EA; cursor:grab;">
+          <article class="media">
+            <div class="media-content">
+              <div style="font-family: Kanit;" class="content is-large">
+                <h5>
+                  <strong>Figma Projects</strong>
+                  <br />
+                </h5>
+              </div>
+            </div>
+              <div class="media-right">
+              <figure class="image is-128x128">
+                <img  class="image is-128x128" src="assets/iPhone 16.png" alt="gif" />
+              </figure>
+              </div>
+          </article>
+          <button class="js-modal-trigger" data-target="modal-js-example2">
+            <a href="#"> Read More </a>
+          </button>
+      </div>
+    </span>
+
 </article>
 
-<button class="js-modal-trigger" data-target="modal-js-example2">
-  Read More
-</button>
-</div>
-</div>
+<div class="dropzone column">
+  <h1> <br> </h1>
 
-<div class="column">
-<div class="box" style="background-color:#FFBFD5;">
+<div class="box isDraggable" style="background-color:#FFBFD5; cursor:grab;">
 <article class="media">
-  <div class="media">
   <div class="media-left">
     <figure class="image is-128x128">
-      <video>
-       <source class="image is-128x128" src="assets/JQueryProject.mp4" type="video/mp4">
-         Your browser does not support the video tag.
-         </video>    </figure>
-  </div>
+      <img  class="image is-128x128" src="assets/pmockup.png" alt="Image" />
+    </figure>
   </div>
   <div class="media-content">
-    <div class="content is-large">
-      <p>
-        <strong>RIT Website Redesign</strong>
+    <div style="font-family: Kanit;" class="content is-large">
+      <h5>
+        <strong>Coding Projects</strong>
         <br />
-      </p>
+      </h5>
     </div>
   </div>
 </article>
 
 <button class="js-modal-trigger" data-target="modal-js-example3">
-  Read More
+  <a href="#"> Read More </a>
 </button>
 
 </div>
 
-<div class="box" style="background-color:#FECD12;">
-<article class="media">
-  <div class="media-content">
-    <div class="content is-large">
-      <p>
-        <strong>Server Error Log Redesign</strong>
-        <br />
-        </p>
-    </div>
-  </div>
-  <div class="media-right">
-      <video class="image is-128x128">
-       <source class="image is-128x128" src="assets/SeniorCapstone(1).mp4" type="video/mp4" autoplay muted>
-         Your browser does not support the video tag.
-         </video>
-  </div>
-</article>
-
-<button class="js-modal-trigger" data-target="modal-js-example4">
-  Read More
-</button>
 </div>
+</section>
+
+<script>
+
+new Draggable.Swappable(document.querySelectorAll('.dropzone'), {
+draggable: '.isDraggable'
+});
 
 
-</div>
-</div>
-
-<div id="modal-js-example2" class="modal">
-  <div class="modal-background"></div>
-
-  <div class="modal-content">
-    <div class="box">
-      <p>Figma</p>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Drip Coffee: Mobile App</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <!-- Content ... -->
-          <p>A fictional small coffee shop asked our team to create a prototype for their mobile application. I was the project manager, visual lead, and interaction designer. I helped plan the application, created the basic wireframe and lead the design system creation process, and created the interaction points on Figma.      </p>
-          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/V7MNT6U63YYkGL71AkKAx0/Coffee-App?page-id=84%3A1217&node-id=85-1&viewport=674%2C580%2C0.21&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=85%3A1&embed-host=share" allowfullscreen></iframe>
-        </section>
-        <footer class="modal-card-foot">
-          <div class="buttons">
-            <button class="button">Close</button>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </div>
-
-  <button class="modal-close is-large" aria-label="close"></button>
-</div>
-
-
-<div id="modal-js-example3" class="modal">
-  <div class="modal-background"></div>
-
-  <div class="modal-content">
-    <div class="box">
-      <p>JQuery, HTML, CSS</p>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">RIT Website Redesign</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <!-- Content ... -->
-          <figure class="image is-128x128">
-            <video>
-             <source src="assets/JQueryProject.mp4" type="video/mp4">
-               Your browser does not support the video tag.
-               </video>    </figure>
-          <p>A website created using JQuery and RIT's API. The request was to create a modern redesign of the iSchool department's website while learning how to use an API. The server it is hosted on can only be reached if on RIT's wifi or VPN.</p>
-        </section>
-        <footer class="modal-card-foot">
-          <div class="buttons">
-            <button class="button">Close</button>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </div>
-
-  <button class="modal-close is-large" aria-label="close"></button>
-</div>
-
-
-<div id="modal-js-example4" class="modal">
-  <div class="modal-background"></div>
-
-  <div class="modal-content">
-    <div class="box">
-      <p>HTML, CSS, PHP</p>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Server Error Log</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <!-- Content ... -->
-          <video class="image is-128x128">
-           <source src="assets/SeniorCapstone(1).mp4" type="video/mp4" autoplay muted>
-             Your browser does not support the video tag.
-             </video>
-          <p> A comprehensive application with multiple layers that monitored server log files, identifying and notifying the IT department of errors. In my capacity as both Project Manager and Full-Stack Developer, I utilized HTML, CSS, PHP, and mySQL. I managed tasks and scheduled meetings through Azure DevOps, while also programming seamless interactions between the front-end, back-end, and database components.      </p>
-        </section>
-        <footer class="modal-card-foot">
-          <div class="buttons">
-            <button class="button">Close</button>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </div>
-
-  <button class="modal-close is-large" aria-label="close"></button>
-</div>
+</script>
 
   </body>
 </html>

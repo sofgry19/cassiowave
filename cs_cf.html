@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CyberFit</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    html, body {
+      scroll-behavior: smooth;
+      color: #2b2b2b;
+      background-color: #fff;
+    }
+
+    section {
+      padding: 6rem 1.5rem;
+    }
+
+    .hero {
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.4);
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .content-wrap {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    img.responsive-img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: #000;
+      margin: 1rem auto 3rem;
+    }
+
+    h2.title {
+      margin-bottom: 1rem;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 4rem auto;
+      max-width: 700px;
+    }
+
+    footer {
+      padding: 3rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero / Intro Section -->
+  <section class="hero">
+     <img src="assets/cyberfit/mirror.png" alt="Hero image" class="responsive-img">
+    <div class="hero-body">
+      <h1 class="title is-1">CyberFit: AR Try-On Mirror</h1>
+      <h2 class="subtitle is-4">AR Mirror App for Confident Clothing Choices</h2>
+    </div>
+  </section>
+
+  <!-- Project Context -->
+  <section id="context">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">Project Context</h2>
+      <div class="divider"></div>
+      <p><strong>Role:</strong>Product Designer & Producer</p>
+      <p><strong>Timeline:</strong> Fall 2024 </p>
+      <p><strong>Tools:</strong> Figma </p>
+      <p><strong>Team:</strong> Sofia Grytsenko </p>
+      <p class="mt-4">CyberFit is an augmented reality (AR) mirror app that empowers users to feel more confident about their clothing choices before making a purchase. By enabling virtual try-ons and personalized style recommendations, CyberFit addresses the gaps left by traditional online shopping platforms.</p>
+    </div>
+  </section>
+
+  <!-- The Challenge -->
+  <section id="challenge" style="background-color: #fafafa;">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">The Challenge</h2>
+      <div class="divider"></div>
+      <p>Online shoppers struggle to visualize how clothes will fit and look on their bodies, relying on static images or model shots that often don’t reflect real fit. This uncertainty causes: decision fatigue, high e-commerce return rates, unsatisfying shopping experiences</p>
+    </div>
+  </section>
+
+  <!-- The Process -->
+  <section id="process">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">The Process</h2>
+      <div class="divider"></div>
+      <p>Ideation Prompt:<br> What if the online shopping experience could be seamlessly combined with your everyday “getting ready” process?</p>
+
+      <h3 class="title is-5 mt-5">Research & Insights</h3>
+      <p>I started by researching everyday users of online shopping apps to understand their pain points and habits, using interviews and persona development. Competitive analysis revealed that most platforms offered only basic sizing guides or limited “virtual try-on” features, which failed to represent diverse body types.</p>
+      <h3 class="title is-5 mt-5">Exploration & Ideation</h3>
+      <p> I used sketches and user journeys to reimagine a more interactive, supportive shopping experience. These insights guided the development of features that would genuinely improve user confidence and engagement.</p>
+      <div class="gallery">
+        <img class="responsive-img" src="assets/sketch-1.jpg" alt="Early sketch">
+        <img class="responsive-img" src="assets/moodboard.jpg" alt="Moodboard">
+      </div>
+
+      <h3 class="title is-5 mt-5">Design Development</h3>
+      <div class="gallery">
+        <img class="responsive-img" src="assets/wireframe.jpg" alt="Wireframe">
+        <img class="responsive-img" src="assets/mockup.jpg" alt="High fidelity mockup">
+      </div>
+    </div>
+  </section>
+
+  <!-- The Solution -->
+  <section id="solution" style="background-color: #fafafa;">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">The Solution</h2>
+      <p>CyberFit empowers users to experiment with clothing through AR mirrors and style inspiration boards, combining personalized recommendations with fully immersive outfit visualization. The prototype, built in Figma, showcased a playful and intuitive interface that helps users visualize and style outfits before making a purchase.</p>
+      <div class="divider"></div>
+
+      <div class="gallery">
+        <img class="responsive-img" src="assets/cyberfit/cyberfit.gif" alt="Final design 1">
+        <img class="responsive-img" src="assets/cyberfit/cf1.png" alt="Final design 2">
+        <img class="responsive-img" src="assets/cyberfit/cf2.png" alt="Final design 2">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- The Outcome -->
+  <section id="outcome">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">Outcome & Impact</h2>
+      <div class="divider"></div>
+      <p>Early user tests showed strong engagement and satisfaction with the way CyberFit eliminated much of the guesswork. Users felt if this procress was present in online stores, they would feel more confident in placing orders.</p>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mother May I</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    html, body {
+      scroll-behavior: smooth;
+      color: #2b2b2b;
+      background-color: #fff;
+    }
+
+    section {
+      padding: 6rem 1.5rem;
+    }
+
+    .hero {
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.4);
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .content-wrap {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    img.responsive-img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: #000;
+      margin: 1rem auto 3rem;
+    }
+
+    h2.title {
+      margin-bottom: 1rem;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 4rem auto;
+      max-width: 700px;
+    }
+
+    footer {
+      padding: 3rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div style="background-color: white; position: fixed;">
+  <nav class="breadcrumb is-centered has-dot-separator">
+  <p class="menu-label">Cassiowave</p>
+  <ul class="menu-list">
+    <li><a class="is-active" href="index.html" style="background-color:#E432A3; padding: 10px;">Case Studies</a></li>
+    <li><a href="apps.html">Digital Design</a></li>
+    <li><a href="cc.html">Personal Projects</a></li>
+    <li><a href="ab.html">About Me</a></li>
+    <li><a href="assets/resume.pdf">Resume</a></li>
+</ul>
+</nav>
+</div>
+  <!-- Hero / Intro Section -->
+  <section class="hero">
+     <img src="assets/mmi/mmired.png" alt="Hero image" class="responsive-img">
+    <div class="hero-body">
+      <h1 class="title is-1">Mother May I: A Dating App Plug-In</h1>
+      <h2 class="subtitle is-4">A plug-in made to promote safer online dating experiences.</h2>
+    </div>
+  </section>
+
+  <!-- Project Context -->
+  <section id="context">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">Project Context</h2>
+      <div class="divider"></div>
+      <p><strong>Role:</strong>Head Researcher, User Experience & Product Designer</p>
+      <p><strong>Timeline:</strong> Fall 2024 </p>
+      <p><strong>Tools:</strong> Figma, Google Forms, Qualtrics </p>
+      <p><strong>Team:</strong> Sofia Grytsenko, Ben Hone, Qianyue Zhou, Cha Cha Peng, and Sige Zeng </p>
+      <p class="mt-4">Mother May I began as a design research project focused on understanding and addressing the struggles of vulnerable populations: ultimately centering on women and the negative interactions they face on dating apps. Our solution: a plug-in for dating platforms that prompts men to pause and reconsider before sending possibly hurtful or offensive messages.</p>
+    </div>
+  </section>
+
+  <!-- The Challenge -->
+  <section id="challenge" style="background-color: #fafafa;">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">The Challenge</h2>
+      <div class="divider"></div>
+      <p>Many women experience harassment, offensive language, and even stalking on dating apps. Our research reaffirmed that the burden is too often placed on women to protect themselves, while few solutions address the source, the behaviors and emotions of men interacting on these platforms. <br><br> Design Question: <br> How might we prevent instances of psychological aggression early in the dating process? <br> <br></p>
+    </div>
+  </section>
+
+  <!-- The Process -->
+  <section id="process">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">The Process</h2>
+      <div class="divider"></div>
+      <p>Our design process focused on synthesizing our research findings into actionable design categories that addressed the critical elements we'd identified: challenging unhealthy control patterns, educating about appropriate courtship behavior, and offering support systems for men.</p>
+
+      <h3 class="title is-5 mt-5">Research & Insights</h3>
+      <p>Our research methodology combined interviews, surveys, and usability testing to build a comprehensive understanding of the dating app experience.  </p>
+      <p>We began by conducting interviews with men about their experiences in dating and using online dating platforms. Through these conversations, we discovered that men often lack solid support systems for navigating dating and relationships. This emotional isolation, combined with limited resources for learning healthy dating behaviors, creates a perfect storm. </p>
+      <img class="responsive-img" src="assets/mmi/mmiresearch.png" alt="Early sketch">
+
+      <h3 class="title is-5 mt-5">Exploration & Ideation</h3>
+      <p>Armed with these insights, we began exploring a wide range of solutions. Our initial brainstorming sessions generated concepts including "Loves Me, Loves Me Not," a speed dating event allowing women to provide real-time feedback; "Women's Wisdom," an online resource for crowdsourced relationship advice; and "Social Cue Cards," a role-playing game designed to force reflection on dating behaviors. </p>
+      <div class="gallery">
+        <img class="responsive-img" src="assets/mmi/mmiearly1.png" alt="Moodboard">
+        <img class="responsive-img" src="assets/mmi/mmiearly2.png" alt="Moodboard">
+        <img class="responsive-img" src="assets/mmi/mmiearly3.png" alt="Moodboard">
+      </div>
+
+      <h3 class="title is-5 mt-5">Design Development</h3>
+      <p>After extensive discussion, we decided to combine all of our initial ideas and create a unique concept: an AI plug-in! First, it intercepted potentially harmful interactions at their source, in the digital space where many dating relationships begin. Second, it met men naturally within their existing dating journey without requiring them to adopt entirely new behaviors or platforms. Most importantly, it didn't place additional burden on women to protect themselves. </p>
+      <div class="gallery">
+        <img class="responsive-img" src="assets/mmi/mmiprocess.png" alt="Wireframe">
+        <img class="responsive-img" src="assets/mmi/mmiuserflow.png" alt="Wireframe">
+      </div>
+    </div>
+  </section>
+
+  <!-- The Solution -->
+  <section id="solution" style="background-color: #fafafa;">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">The Solution</h2>
+      <p>Our final solution is Mother May I! A dating app plug-in that performs real-time sentiment analysis on outgoing messages from male users. When the system detects potentially harmful, aggressive, or inappropriate content, it prompts the sender to pause and reconsider their message. The intervention is designed to be empathetic and supportive, offering alternative phrasing suggestions or encouraging reflection about the recipient's likely reaction.</p>
+      <div class="divider"></div>
+
+      <div class="gallery">
+        <img class="responsive-img" src="assets/mmi/mmivideo.gif" alt="Final design 1">
+        <img class="responsive-img" src="assets/mmi/mmifinal.png" alt="Final design 1">
+      </div>
+    </div>
+  </section>
+
+  <!-- The Outcome -->
+  <section id="outcome">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">Outcome & Impact</h2>
+      <div class="divider"></div>
+      <p>The response to our work was overwhelmingly positive. When we presented to the Tinder team, they particularly appreciated how we integrated our solution directly into the existing app experience rather than creating a separate platform. They noted that the gamified, non-serious approach helped make self-reflection more accessible for male users while still addressing the serious underlying issues.</p>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section id="reflection" style="background-color: #fafafa;">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">Reflection & Learnings</h2>
+      <div class="divider"></div>
+      <p>This project taught me that the core problem you're solving may evolve significantly from your initial assumptions. We began focused on protecting women from harassment but discovered that creating lasting change required understanding and addressing the emotional and social factors that drive harmful behavior in the first place. The process deepened my empathy for all users involved in these interactions, including those responsible for causing harm.</p>
+    </div>
+  </section>
+
+</body>
+</html>
