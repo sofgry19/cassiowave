@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cool Dogs</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/anka-coder" type="text/css"/>
+  <style>
+    html, body {
+      scroll-behavior: smooth;
+      color: #2b2b2b;
+      background-color: #fff;
+    }
+
+    section {
+      padding: 6rem 1.5rem;
+    }
+
+    .hero {
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.4);
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .content-wrap {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    img.responsive-img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: #000;
+      margin: 1rem auto 3rem;
+    }
+
+    h2.title {
+      margin-bottom: 1rem;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 4rem auto;
+      max-width: 700px;
+    }
+
+    footer {
+      padding: 3rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+      .breadcrumb{
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="column1" style="background-color: white; position: fixed; padding-right: 10%;">
+  <nav class="breadcrumb has-dot-separator">
+  <p class="menu-label"><img src="assets/sofia2.gif" width="100%" height="100%" alt="Sofia Grytsenko"></p>
+  <ul class="menu-list">
+    <li><a href="index.html" style="padding: 10px;">Case Studies</a></li>
+    <li><a href="apps.html">Digital Design</a></li>
+    <li><a class="is-active"  style="background-color:#E432A3;" href="cc.html">Personal Projects</a></li>
+    <li><a href="ab.html">About Me</a></li>
+    <li><a href="assets/resume.pdf">Resume</a></li>
+  </ul>
+  </nav>
+  </div>
+  <!-- Hero / Intro Section -->
+  <div class="cs">
+  <section class="hero">
+     <img src="assets/sp/sp1.JPG" alt="Hero image" class="responsive-img">
+    <div class="hero-body">
+      <h1 class="title is-1">SilkScreen Prints</h1>
+      <h2 class="subtitle is-4">A collection of designed and printed posters, shirts, and tote bags.</h2>
+    </div>
+  </section>
+
+  <!-- Project Context -->
+  <section id="context">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">Project Context</h2>
+      <div class="divider"></div>
+      <p><strong>Role:</strong>Designer</p>
+      <p><strong>Timeline:</strong> Fall 2025 </p>
+      <p><strong>Tools:</strong> SilkScreen </p>
+      <p><strong>Team:</strong> Sofia Grytsenko </p>
+    </div>
+  </section>
+
+  <!-- The Challenge -->
+  <section id="challenge" style="background-color: #fafafa;">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">Large Poster</h2>
+      <div class="divider"></div>
+      <div class="gallery">
+        <img class="responsive-img" src="assets/sp/spf1.JPG" alt="Early sketch">
+        <img class="responsive-img" src="assets/sp/spf3.JPG" alt="Moodboard">
+      </div>
+    </div>
+  </section>
+
+  <!-- The Process -->
+  <section id="process">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">"Head in the Cloud" T-Shirt</h2>
+      <div class="gallery">
+        <img class="responsive-img" src="assets/sp/sps2.JPG" alt="Early sketch">
+        <img class="responsive-img" src="assets/sp/sps3.JPG" alt="Moodboard">
+      </div>
+    </div>
+  </section>
+
+  <!-- The Solution -->
+  <section id="solution" style="background-color: #fafafa;">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">Custom Tote-Bags</h2>
+      <div class="divider"></div>
+
+      <div class="gallery">
+        <img class="responsive-img" src="assets/sp/spt1.jpg" alt="Final design 1">
+        <img class="responsive-img" src="assets/sp/spt2.jpg" alt="Final design 2">
+        <img class="responsive-img" src="assets/sp/spt3.jpg" alt="Final design 2">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- The Outcome -->
+  <section id="outcome">
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered">Punk Poster</h2>
+      <div class="divider"></div>
+      <div class="gallery">
+        <img class="responsive-img" src="assets/sp/spm1.JPG" alt="Early sketch">
+        <img class="responsive-img" src="assets/sp/spm2.JPG" alt="Moodboard">
+      </div>
+    </div>
+    <div class="content-wrap">
+      <h2 class="title is-3 has-text-centered"><br>OK King Merchandise</h2>
+      <div class="divider"></div>
+      <div class="gallery">
+        <img class="responsive-img" src="assets/sp/okking1.heic" alt="Early sketch">
+        <img class="responsive-img" src="assets/sp/okking2.heic" alt="Moodboard">
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
