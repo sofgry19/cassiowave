@@ -1,0 +1,727 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Foundations of a Flourishing Society: A Joyful Exploration of Human Interaction</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+</style></head><body> <a href="../../../index.html" style="position:fixed; background-color: pink; padding: 10px; border-radius: 10px;"><h2>Go Back</h2></a>  <article id="2e7cdae9-abba-80e3-bd3a-fe1130380660" class="page sans"><header><img class="page-cover-image" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/1765475727704-dec6651d-336e-4f9b-b8ed-528e62f9c864_1.jpg" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">✨</span></div><h1 class="page-title" dir="auto">Foundations of a Flourishing Society: A Joyful Exploration of Human Interaction</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody><tr class="property-row property-row-text"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Student Name </th><td>Sofia Grytsenko</td></tr><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Tags</th><td><span class="selected-value select-value-color-purple">Design Research</span><span class="selected-value select-value-color-blue">Human-Centered Design</span><span class="selected-value select-value-color-purple">Interaction Design</span><span class="selected-value select-value-color-pink">Product Innovation</span><span class="selected-value select-value-color-yellow">Products of Design</span><span class="selected-value select-value-color-red">Service Design</span><span class="selected-value select-value-color-purple">Social Impact Design</span><span class="selected-value select-value-color-default">Systems Design</span><span class="selected-value select-value-color-brown">User Experience (UX) Design</span></td></tr></tbody></table></header><div class="page-body"><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8170-9ee1-ee65687fe979" class="image"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/45c5df3f-c08c-48fc-8401-0a3a51edc4e0.png"><img style="width:495.8778625954199px" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/45c5df3f-c08c-48fc-8401-0a3a51edc4e0.png"/></a></figure></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-810a-84ce-e1d8e5a83695" class="block-color-pink"><mark class="highlight-default">My MFA thesis explores how</mark> design influences everyday emotions and experiences and how that influence can be used positively.</h2></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-816d-921b-cfa130b0f1ef" class="">Design can create small, joyful moments in everyday urban life: especially for young adults moving through public spaces like streets, subways, and parks. </p></div><div style="display:contents" dir="auto"><p id="2f5cdae9-abba-80b2-8887-d2793345e95c" class="">Through interviews, participatory workshops, and playful prototypes, I studied how objects, environments, and interactions can tap into people’s “inner child,” support emotional well-being, and foster tiny bursts of connection in otherwise routine or stressful city days.</p></div><div style="display:contents" dir="auto"><p id="2f5cdae9-abba-800c-8d86-e418374a7fc1" class="">This lead to my theory: The Pillars of Joy. There are many products and experiences that bring people joy, but what are the factors that actually cause people to stop and appreciate the moment? </p></div><div style="display:contents" dir="auto"><p id="2f5cdae9-abba-8042-81ac-dc48035fdb74" class="">In order for joy to be long-lasting and impactful, it must include a sensory feature, spontaneous moment, and a shared connection with another soul. Only once these three factors are fulfilled does an experience or product truly effect one’s self. </p></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-81ad-8ed0-c92433d14d29" class="image"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/joytheory.png"><img style="width:576px" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/joytheory.png"/></a></figure></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-8181-b8f7-c90ad81bd390"/></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-81cf-8a71-f60f55161dc5" class=""><mark class="highlight-default">About Me </mark></h2></div><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-8192-ac48-c00c88bb466f" class="column-list"><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-81ed-a8b6-dd16c919073e" style="width:43.75%" class="column"><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8141-a6e9-e624b36d3f0e" class="image"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/IMG_6886.jpg"><img style="width:288px" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/IMG_6886.jpg"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-8186-8e66-e68f07d01ff1" style="width:56.25%" class="column"><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81c3-b556-e0ace47ef783" class=""><strong>Sofia Grytsenko</strong> is a user-experience &amp; product designer, with a background in computer science, web development, and psychology. </p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8031-9cd1-d8b2ff5df0e8" class="">She is the co-founder of a merchandising studio called Okio (with cohort member Ana) and is developing Cool Dogs, a blind-box collectible all about surprise and delight.</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8109-8a1f-ff86e2374cc1" class="">When she’s not building products, she is chasing playful ideas: from running a stall at The Lucky Flea to working and DJing at WSVA Radio.<br/></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8141-ac82-ee3fec852a7b" class=""><mark class="highlight-pink"><strong><a href="https://cassiowave.com/assets/resume.pdf">Resume</a></strong></mark><mark class="highlight-yellow"><strong>  | </strong></mark><mark class="highlight-pink"><strong> </strong></mark><mark class="highlight-pink"><strong><a href="http://cassiowave.com">Website</a></strong></mark><mark class="highlight-pink"><strong> </strong></mark><mark class="highlight-yellow"><strong> |  </strong></mark><mark class="highlight-pink"><strong><a href="https://www.linkedin.com/in/sofiagry/">LinkedIn</a></strong></mark><mark class="highlight-yellow"><strong> </strong></mark></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81fd-9652-d294a62f6c88" class=""><mark class="highlight-blue"><strong>Thesis Advisor:</strong></mark> <strong>Sinclair Smith</strong></p></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-817b-b900-e76ec92839d5"/></div><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-81df-9649-cfb5a65d51a8" class="column-list"><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-81cd-904d-f810f6bb9fc5" style="width:50%" class="column"><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-81fe-956d-d798b7837c97" class="block-color-purple"><mark class="highlight-default">Key Term Glossary</mark></h2></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-81e4-9268-fa148dcf3d00" class="block-color-default_background toggle"><li><details open=""><summary><mark class="highlight-blue">My thesis lexicon</mark></summary><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8152-9266-d9007b709145" class=""><mark class="highlight-yellow"><strong>Happiness</strong></mark></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81ac-9130-e15d89e553f0" class="">A state of well-being and contentment. <em>Merriam-Webster Dictionary.</em></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8168-a1fa-e0ca4750c6c1" class=""><mark class="highlight-yellow"><strong>Joy</strong></mark></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81bf-8a62-ecfbed77e436" class="">A brief, often shared disruption of routine that softens people, through nature, creature-energy, or playful surprise, and leaves them feeling more alive, safe, and open in their everyday environment.<br/><em>Sofia Grytsenko.</em></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8144-a4b6-ee2924ea8096" class=""><mark class="highlight-yellow"><strong>Flourishing Society</strong></mark></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-811e-a76b-cacd6692175e" class="">A society where members want to develop as individuals, live their lives to their fullest potential, and act in the best interests of society. <br/><em>Desmet, P. M. A., &amp; Pohlmeyer, A. E. (2013). Positive design: An introduction to design for subjective well-being. International Journal of Design, 7(3), 5-19.</em></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-814b-88e3-f097c8eaa3d6" class=""><mark class="highlight-yellow"><strong>COMING SOON</strong></mark></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81dd-b0e5-d38b8e748edc" class="">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-817f-ae8c-e551d549f651" class=""><mark class="highlight-yellow"><strong>COMING SOON</strong></mark></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8186-807a-c91c6c7c9e2c" class="">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8169-9806-e5dce674180d" class=""><mark class="highlight-yellow"><strong>COMING SOON</strong></mark></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81f4-831a-d63ae760e9e0" class="">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8161-b248-f20209519076" class=""><mark class="highlight-yellow"><strong>COMING SOON</strong></mark></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8120-9795-ef12f6150bdd" class="">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-812b-a1c1-c0f4e8944e7b" class=""><mark class="highlight-yellow"><strong>COMING SOON</strong></mark></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81e0-acc6-d7b955c80a7f" class="">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81ad-8143-d0c4f1531eef" class=""><mark class="highlight-yellow"><strong>COMING SOON</strong></mark></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8149-a3e1-c48572e1f62b" class="">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81a0-95b4-c3502cb420e3" class=""><mark class="highlight-yellow"><strong>COMING SOON</strong></mark></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8122-a1f1-f67dc89af4d4" class="">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p></div></details></li></ul></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-8101-a429-c115b175bd5e" class="">Thesis Blog<mark class="highlight-yellow"> </mark></h2></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-8194-ab7d-dc19b4545ec3" class="toggle"><li><details open=""><summary><mark class="highlight-blue">View topics</mark></summary><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-81dc-9416-f794d29d49ea" class="bulleted-list"><li style="list-style-type:disc"><a href="https://medium.com/@sgrytsenko_98393/explorations-of-joy-color-4a68a3500d53">Explorations of Joy: A Series</a></li></ul></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-8181-a8fe-dd9c4bc9b94e" class="bulleted-list"><li style="list-style-type:disc"><a href="https://medium.com/@sgrytsenko_98393/my-takeaways-from-decembers-thesis-fair-fd2e00b02dc9">My Takeaways from The December Thesis Fair</a></li></ul></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-8123-9d8f-d49d8115882e" class="bulleted-list"><li style="list-style-type:disc"><a href="https://medium.com/@sgrytsenko_98393/gift-wrapping-a-question-b4826a5393c3">Gift-Wrapping a Question: What Makes You Happy?</a></li></ul></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-818f-afef-d6cdf5e8b3b7" class="bulleted-list"><li style="list-style-type:disc"><a href="https://medium.com/@sgrytsenko_98393/joy-connections-and-you-e01778e38a9f">Joy, Connections, and You!</a></li></ul></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-81e8-affa-fc9431f0ad38" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.notion.so#">Speculative Futures (Coming Soon)</a></li></ul></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-8110-a913-f34c2de00bf2" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.notion.so#">Prototype: Tarot Tile (COMING SOON)</a></li></ul></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-81a0-bc09-c7963ba3c90a" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.notion.so#">What are the Pillars of Joy (COMING SOON)</a></li></ul></div></details></li></ul></div><div style="display:contents" dir="auto"><div><div style="display:contents" dir="auto"><p id="2f1cdae9-abba-8064-8377-cd80e94eed58" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><p id="2eacdae9-abba-80e4-8b70-dc8646f592c5" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-812f-89ee-f3f7873a7652" style="width:50%" class="column"><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-81bd-ab8e-f4b66184f9ab" class="block-color-purple"><mark class="highlight-default">Acknowledgements</mark></h2></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-8165-8f39-ee2695ff4fbb" class="toggle"><li><details open=""><summary><mark class="highlight-blue">The People Who Made This Process More Joyful.</mark></summary><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-8149-8333-f5d337ccfd17" class="column-list"><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-8191-8e64-f4d67b1caf99" style="width:100%" class="column"><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81e1-a2aa-f55c8d9089be" class="">Alex De Looz</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81d0-b7d2-f9be44a1e996" class="">Christiana Aghjayan</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81a3-8f2d-de2f80b54f29" class="">Elissa Ecker</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-813c-ab5c-e47dce35992d" class="">Sinclair Smith</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-812e-abc3-ee7034e7f069" class="">Allan Chochinov</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-817d-b7c3-c6c18f1f3a20" class="">Zeve Cohen</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81f7-963a-c044ba845861" class="">Monty Preston</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8118-ad00-d8b20ff5d6d6" class="">Anne Sax</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8158-a23a-e78f8f7bc6c9" class="">Keith Hone</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81b3-9e2a-e3bbaee4d305" class="">Linda Turner</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8114-b25b-f036dc747bd2" class="">Jake Adams</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-818d-8300-eaa0ec2170b4" class="">Adrianna Young</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8122-8ff6-fb58a1f998fc" class="">Sigi</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81e8-97a8-e0328cefd38b" class="">Masamichi</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-816e-956f-fd0694321143" class="">Emilie Baltz</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8157-9eb8-d33a3b2934e4" class="">Krissy Xenakis</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81d8-876b-f446562c4f39" class="">Kristine Mudd</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81de-97c2-da7a43bce192" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8105-8530-cfab7ef5fd1a" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8134-8da1-d1cfc1409d8d" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81e2-86f9-de92b28efab7" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8134-8ad7-c026c69d51b0" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81e8-b922-e70f33d53d09" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-819a-b0e9-cdd56cd7d674" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81fb-b74c-ce12f1a984d5" class="">XYZ</p></div></div></div><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-811e-8004-f2fd66eb5620" style="width:100%" class="column"><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-815b-a82c-fc3f3da0813e" class="">Sophia Haase</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-817c-879b-e706f098d078" class="">Benjamin Hone</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81af-a369-ea229d9354e3" class="">Lauren Palazzi</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-817d-8454-d1ec8c1ed01a" class="">Rida Zeng</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81d0-9a1f-d21eebb6b046" class="">Haosen Zheng</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-814a-844e-dfc8ef57f05d" class="">Helen Escobar</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-812c-9984-e3858eda057d" class="">Gaetano Lairdiri</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-817e-b60c-ea39a59a9f89" class="">Michael Sevarance</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8157-b3f5-c44e3d875509" class="">Tyler Suzuki</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-815c-9f11-c8dd925ccc06" class="">Jason Forrest</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81e4-a79f-cdc2d545ba17" class="">Sigi</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81fd-a3f7-e18663964800" class="">Masamichi</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-819e-93a9-e528e9566581" class="">Ailsa Petrie</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81d4-80c7-f581af0db67e" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81f6-8875-d35bbf4b13ba" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-817d-8e81-e06131be0391" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81c7-b468-e3e6e9f50e43" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81de-92f6-fdc180da3bd9" class="">XYZ</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81be-a165-d4ff91f03e6d" class="">Pilar …</p></div></div></div></div></div></details></li></ul></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-812c-88e2-fbeeb6472841" class="">Final Presentation</h2></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-818b-8808-e165260e4021" class=""><mark class="highlight-blue">(Recording to come)</mark></p></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8133-b202-d65cc5293472" class="image"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/0912d65c-111c-4ae4-b0bf-0aeae7823602.png"><img style="width:360.18217306441113px" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/0912d65c-111c-4ae4-b0bf-0aeae7823602.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-8103-b581-e9c64a2caf96"/></div><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2e7cdae9-abba-8174-88b0-fa8919120452"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><div style="display:contents" dir="auto"><h1 id="2e7cdae9-abba-81c5-bd5e-e6bdceeec8fa" class=""><strong>“To this day, and no doubt for good reasons, suffering remains the almost exclusive preoccupation of professional psychology. Journals in the field have published forty-five thousand articles in the last thirty years on depression, but only four hundred on joy”</strong></h1></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-812a-94a3-dcc7da7d585a" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8109-8c19-c503a9da14ee" class=""> – Barbara Ehrenreich<br/>Author of Dancing in the Streets: A History of Collective Joy</p></div></div></figure></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-8164-8f7d-f92559b8f6ea"/></div><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-816e-812e-ed6d05c73d57" class="column-list"><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-8118-8330-cf7eae3a9e55" style="width:50%" class="column"><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-81a4-9f73-ca11f2b08706" class="">Explorations of Joy: A Series</h2></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8112-a9e6-c75131abaf19" class="link-to-page"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Asking%20%E2%80%9CWhat%20Makes%20YOU%20Happy%20%E2%80%9D%202e7cdae9abba8112a9e6c75131abaf19.html"><span class="icon">🖌️</span>Asking “What Makes YOU Happy?”</a></figure></div><div style="display:contents" dir="auto"><p id="2fbcdae9-abba-80f6-b36e-fa8e8fcc6ac3" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81b5-b57f-fe210ea7de42" class="">Nearly 100 years before my red balloon crossed Madison Square Park, Joan Miro painted <em>The Birth of the World</em><br/> in colors that feel murky and unsettled as a grey New York sky, then <br/>pierced that darkness with a small red sphere and other floating signs. </p></div><div style="display:contents" dir="auto"><p id="2fbcdae9-abba-8041-96e8-e6f8f4fe6fd4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2fbcdae9-abba-80a4-b4fe-fb41512baa35" class="">Through several different experiments, I tested how design can be used to influence individual’s moods and opinions. I also wondered if there was a way to investigate these inquiries without being so obtuse and obvious about it.</p></div><div style="display:contents" dir="auto"><p id="2fbcdae9-abba-80c3-8fc9-fe5be9b101d4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8179-998d-d89a6712f74f" class="">I pondered the question: <a href="https://medium.com/@sgrytsenko_98393/explorations-of-joy-color-4a68a3500d53">What brings you joy?</a></p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8151-896d-f6f86fdc2334" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-81d6-9f87-fc0efcdd2100" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8139-a996-e79e61540ebd" class="image"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/1K1A4708(2).jpg"><img style="width:709.982666015625px" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/1K1A4708(2).jpg"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-8109-ab6b-e48facd0dd63"/></div><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2e7cdae9-abba-8141-b6e2-d916df85455a"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><div style="display:contents" dir="auto"><h1 id="2e7cdae9-abba-810b-8e39-d37555d61ff4" class="">“<strong>We wanted people to get back to their primal state of learning, like they were babies again discovering the world for the first time. </strong></h1></div><div style="display:contents" dir="auto"><p id="2eacdae9-abba-80f5-a9b0-c91ae9a9a5f7" class=""><strong>It [Arkhé] seemed to bring a lot of joy to people.</strong>”</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81ac-b0ac-e2a4c76fdef8" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-816e-a031-f3231745e63f" class=""> – Jake Adams<br/>Co-Founder of Arke, Professor at RIT</p></div></div></figure></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-8150-a356-dd9d63515d66" class=""><mark class="highlight-default">3D Product Design (Coming Soon)</mark></h2></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-81ac-af6b-d2bcfd3d243d"><div class="source"><a href="https://youtu.be/q-YCQU2nrcc">https://youtu.be/q-YCQU2nrcc</a></div></figure></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><mark class="highlight-blue">See more</mark></summary><div class="indented"><div style="display:contents" dir="ltr"><div id="2e7cdae9-abba-81c7-bcfa-deef1f3965b3" class="collection-content"><h4 class="collection-title">Participatory Research Workshop (User Research) (1)</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><img src="https://www.notion.so/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Speculative News</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Timeframe</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>tags</th></tr></thead><tbody><tr id="2e7cdae9-abba-81d5-90cc-c9597f368493"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(1/COMING%20SOON%202e7cdae9abba81d590ccc9597f368493.html">COMING SOON</a></td><td class="cell-WKsv"></td><td class="cell-C/W}"></td><td class="cell-K{K`"><span class="selected-value select-value-color-red">kids</span><span class="selected-value select-value-color-brown">physical product design</span><span class="selected-value select-value-color-pink">product design</span><span class="selected-value select-value-color-brown">toys</span></td></tr><tr id="2e7cdae9-abba-81bc-9604-cb366f1d2a37"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(1/Prototyping%20(COMING%20SOON)%202e7cdae9abba81bc9604cb366f1d2a37.html">Prototyping (COMING SOON)</a></td><td class="cell-WKsv"></td><td class="cell-C/W}"></td><td class="cell-K{K`"><span class="selected-value select-value-color-red">kids</span><span class="selected-value select-value-color-brown">physical product design</span><span class="selected-value select-value-color-pink">product design</span><span class="selected-value select-value-color-brown">toys</span></td></tr><tr id="2e7cdae9-abba-81b4-8ac6-db09ba11904d"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(1/User%20Testing%20&amp;%20Feedback%20(COMING%20SOON)%202e7cdae9abba81b48ac6db09ba11904d.html">User Testing &amp; Feedback (COMING SOON)</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">3 weeks</td><td class="cell-K{K`"><span class="selected-value select-value-color-green">birthday</span><span class="selected-value select-value-color-yellow">card</span><span class="selected-value select-value-color-pink">circularity</span><span class="selected-value select-value-color-red">gift</span><span class="selected-value select-value-color-pink">product design</span><span class="selected-value select-value-color-orange">reciprocity</span></td></tr><tr id="2e7cdae9-abba-8166-aa14-c155e532339f"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(1/Additional%20Product%20Explorations%202e7cdae9abba8166aa14c155e532339f.html">Additional Product Explorations</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">3 weeks</td><td class="cell-K{K`"><span class="selected-value select-value-color-green">birthday</span><span class="selected-value select-value-color-yellow">card</span><span class="selected-value select-value-color-pink">circularity</span><span class="selected-value select-value-color-red">gift</span><span class="selected-value select-value-color-pink">product design</span><span class="selected-value select-value-color-orange">reciprocity</span></td></tr></tbody></table><br/><br/></div></div></div></details></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-813f-b084-d6db4cb750bb"/></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-8118-bb52-e15b32dc66a3" class=""><mark class="highlight-default">Service Design (Coming Soon)</mark></h2></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8110-8a17-d19deb3f3980" class="image"><a href="https://media0.giphy.com/media/v1.Y2lkPTc5NDFmZGM2MXVuamczYWM1d283cXdjMGg4cjQyYWdkYW94c2xpamxueTJhYjQ1aiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/s0go9ywxjJg4w/giphy.gif"><img style="width:2px" src="https://media0.giphy.com/media/v1.Y2lkPTc5NDFmZGM2MXVuamczYWM1d283cXdjMGg4cjQyYWdkYW94c2xpamxueTJhYjQ1aiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/s0go9ywxjJg4w/giphy.gif"/></a></figure></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><mark class="highlight-blue">See more</mark></summary><div class="indented"><div style="display:contents" dir="ltr"><div id="2e7cdae9-abba-818d-84be-f9fb26099225" class="collection-content"><h4 class="collection-title">Participatory Research Workshop (User Research) (3)</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><img src="https://www.notion.so/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Speculative News</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Timeframe</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>tags</th></tr></thead><tbody><tr id="2e7cdae9-abba-8193-ac4b-d1eb11612cbe"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3/Service%20Ideation%20Process%20(COMING%20SOON)%202e7cdae9abba8193ac4bd1eb11612cbe.html">Service Ideation Process (COMING SOON)</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">5 Weeks</td><td class="cell-K{K`"><span class="selected-value select-value-color-orange">Figma</span><span class="selected-value select-value-color-green">How Might We</span><span class="selected-value select-value-color-default">Ideation</span><span class="selected-value select-value-color-red">It Sucks That</span><span class="selected-value select-value-color-red">Service Design</span></td></tr><tr id="2e7cdae9-abba-813d-a567-e2be52e4e184"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3/Assets%20&amp;%20Artifacts%20(COMING%20SOON)%202e7cdae9abba813da567e2be52e4e184.html">Assets &amp; Artifacts (COMING SOON)</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">6 weeks</td><td class="cell-K{K`"><span class="selected-value select-value-color-default">Graphics / Branding</span><span class="selected-value select-value-color-orange">Physical Artifacts</span><span class="selected-value select-value-color-red">Service Design</span><span class="selected-value select-value-color-green">User Research</span></td></tr><tr id="2e7cdae9-abba-8150-9436-f246b38b3682"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3/User%20Testing%20Round%201%20(COMING%20SOON)%202e7cdae9abba81509436f246b38b3682.html">User Testing Round 1 (COMING SOON)</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">Ongoing</td><td class="cell-K{K`"><span class="selected-value select-value-color-yellow">Prototyping</span><span class="selected-value select-value-color-green">User Research</span><span class="selected-value select-value-color-default">User Testing</span></td></tr><tr id="2e7cdae9-abba-81e8-9c28-c55df9be0f74"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3/Pitch%20Deck%20(COMING%20SOON)%202e7cdae9abba81e89c28c55df9be0f74.html">Pitch Deck (COMING SOON)</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">2 days</td><td class="cell-K{K`"><span class="selected-value select-value-color-default">Entrepreneurship</span><span class="selected-value select-value-color-orange">Figma</span><span class="selected-value select-value-color-default">Graphics / Branding</span><span class="selected-value select-value-color-red">Service Design</span></td></tr><tr id="2e7cdae9-abba-81c9-bb69-c3f4b46107d8"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3/Journey%20Mapping%20(COMING%20SOON)%202e7cdae9abba81c9bb69c3f4b46107d8.html">Journey Mapping (COMING SOON)</a></td><td class="cell-WKsv"></td><td class="cell-C/W}"></td><td class="cell-K{K`"><span class="selected-value select-value-color-orange">Frameworks</span><span class="selected-value select-value-color-brown">Journey Map</span><span class="selected-value select-value-color-blue">User Journey</span></td></tr><tr id="2e7cdae9-abba-8100-a596-c0542310e6f2"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3/Service%20Blueprint%20(to%20come)%202e7cdae9abba8100a596c0542310e6f2.html">Service Blueprint (to come)</a></td><td class="cell-WKsv"></td><td class="cell-C/W}"></td><td class="cell-K{K`"></td></tr></tbody></table><br/><br/></div></div></div></details></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-8186-96b1-fa55db8f8054"/></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-8144-9735-c496b922cf12"/></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-813f-97b3-e1e7ed9b357f" class=""><mark class="highlight-default">Experience Design (Coming Soon)</mark></h2></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-81aa-88b7-d47dde01eb1e"><div class="source"><a href="https://youtu.be/q-YCQU2nrcc">https://youtu.be/q-YCQU2nrcc</a></div></figure></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><mark class="highlight-blue">See more</mark></summary><div class="indented"><div style="display:contents" dir="ltr"><div id="2e7cdae9-abba-817f-a509-eaf4b16eda9f" class="collection-content"><h4 class="collection-title">Participatory Research Workshop (User Research) (3)</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><img src="https://www.notion.so/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Speculative News</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Timeframe</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>tags</th></tr></thead><tbody><tr id="2e7cdae9-abba-8162-aafb-dc92bed5b5c7"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3%202e7c-da9f/Concept%20Development%202e7cdae9abba8162aafbdc92bed5b5c7.html">Concept Development</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">4 weeks</td><td class="cell-K{K`"><span class="selected-value select-value-color-orange">Figma</span><span class="selected-value select-value-color-default">Graphics / Branding</span><span class="selected-value select-value-color-default">Ideation</span><span class="selected-value select-value-color-red">Service Design</span></td></tr><tr id="2e7cdae9-abba-8145-bf4e-e98b4379a32f"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3%202e7c-da9f/Key%20Consultations%20Wendy%20MacNaughton,%20Emilie%20Baltz,%202e7cdae9abba8145bf4ee98b4379a32f.html">Key Consultations: Wendy MacNaughton, Emilie Baltz, Adam Fujita, Alex de Looz</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">1 week</td><td class="cell-K{K`"></td></tr><tr id="2e7cdae9-abba-8151-8c9b-dcc2efa5e37f"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3%202e7c-da9f/Production%202e7cdae9abba81518c9bdcc2efa5e37f.html">Production</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">1 week</td><td class="cell-K{K`"><span class="selected-value select-value-color-yellow">Prototyping</span><span class="selected-value select-value-color-green">User Research</span><span class="selected-value select-value-color-default">User Testing</span></td></tr><tr id="2e7cdae9-abba-818e-97a1-ff125b0f965f"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3%202e7c-da9f/Design%20Assets%202e7cdae9abba818e97a1ff125b0f965f.html">Design Assets</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">2 weeks</td><td class="cell-K{K`"><span class="selected-value select-value-color-default">Graphics / Branding</span><span class="selected-value select-value-color-orange">Physical Artifacts</span><span class="selected-value select-value-color-red">Service Design</span><span class="selected-value select-value-color-green">User Research</span></td></tr><tr id="2e7cdae9-abba-81dd-856e-d08ccd67ddf6"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3%202e7c-da9f/Event%20Photos%20&amp;%20Visuals%202e7cdae9abba81dd856ed08ccd67ddf6.html">Event Photos &amp; Visuals</a></td><td class="cell-WKsv"></td><td class="cell-C/W}"></td><td class="cell-K{K`"></td></tr><tr id="2e7cdae9-abba-8169-9f44-eda3b7b23287"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(3%202e7c-da9f/Reflection%20&amp;%20Next%20Steps%202e7cdae9abba81699f44eda3b7b23287.html">Reflection &amp; Next Steps</a></td><td class="cell-WKsv"></td><td class="cell-C/W}"></td><td class="cell-K{K`"></td></tr></tbody></table><br/><br/></div></div></div></details></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-810e-b4ac-f0430ec19735"/></div><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2e7cdae9-abba-8129-9a28-f04d20066d7d"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><div style="display:contents" dir="auto"><h1 id="2e7cdae9-abba-8120-90be-cd753e387200" class=""><strong>“Adults are more emotionally complex then children, allowing for designers to tap into those complex emotions.”</strong></h1></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-816b-8fbd-d84813c6ccb2" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-81b7-992d-e1495007c79b" class="">— Tyler Suzuki, Project Coordinator at Walt Disney Imagineering</p></div></div></figure></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-815f-a551-c28560a297ce"/></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-814e-9112-d4378c8cd4bf" class=""><mark class="highlight-default">Interaction Design (Coming Soon)</mark></h2></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8179-97e3-eb57329cf59a" class="image"><a href="https://media0.giphy.com/media/v1.Y2lkPTc5NDFmZGM2MXVuamczYWM1d283cXdjMGg4cjQyYWdkYW94c2xpamxueTJhYjQ1aiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/s0go9ywxjJg4w/giphy.gif"><img style="width:710px" src="https://media0.giphy.com/media/v1.Y2lkPTc5NDFmZGM2MXVuamczYWM1d283cXdjMGg4cjQyYWdkYW94c2xpamxueTJhYjQ1aiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/s0go9ywxjJg4w/giphy.gif"/></a></figure></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><mark class="highlight-blue">See more</mark></summary><div class="indented"><div style="display:contents" dir="ltr"><div id="2e7cdae9-abba-81f6-b376-f7103b0cb2ad" class="collection-content"><h4 class="collection-title">Participatory Research Workshop (User Research) (1)</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><img src="https://www.notion.so/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Speculative News</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Timeframe</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>tags</th></tr></thead><tbody><tr id="2e7cdae9-abba-81dc-afcb-d4fc80f26c07"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(1%202e7c-b2ad/Concept%20&amp;%20User%20Testing%20(COMING%20SOON)%202e7cdae9abba81dcafcbd4fc80f26c07.html">Concept &amp; User Testing (COMING SOON)</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">3 weeks</td><td class="cell-K{K`"><span class="selected-value select-value-color-red">Concept Testing</span><span class="selected-value select-value-color-default">Figma</span><span class="selected-value select-value-color-purple">Interaction Design</span><span class="selected-value select-value-color-yellow">Mobile App</span><span class="selected-value select-value-color-blue">User Testing</span><span class="selected-value select-value-color-orange">Wireframing</span><span class="selected-value select-value-color-red">gift</span></td></tr><tr id="2e7cdae9-abba-8192-abcf-c6d4af5ac036"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(1%202e7c-b2ad/User%20Flow%20(COMING%20SOON)%202e7cdae9abba8192abcfc6d4af5ac036.html">User Flow (COMING SOON)</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">3 weeks</td><td class="cell-K{K`"><span class="selected-value select-value-color-red">Concept Testing</span><span class="selected-value select-value-color-default">Figma</span><span class="selected-value select-value-color-purple">Interaction Design</span><span class="selected-value select-value-color-yellow">Mobile App</span><span class="selected-value select-value-color-blue">User Testing</span><span class="selected-value select-value-color-orange">Wireframing</span><span class="selected-value select-value-color-red">gift</span></td></tr><tr id="2e7cdae9-abba-81ec-a3a0-dd1e6b141ac8"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(1%202e7c-b2ad/Website%20(COMING%20SOON)%202e7cdae9abba81eca3a0dd1e6b141ac8.html">Website (COMING SOON)</a></td><td class="cell-WKsv"></td><td class="cell-C/W}">3 weeks</td><td class="cell-K{K`"><span class="selected-value select-value-color-orange">Content Design</span><span class="selected-value select-value-color-purple">Digital Design</span><span class="selected-value select-value-color-default">Figma</span><span class="selected-value select-value-color-green">UX</span><span class="selected-value select-value-color-blue">User Testing</span></td></tr></tbody></table><br/><br/></div></div></div></details></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-8171-9340-eee679f4e3ef"/></div><div style="display:contents" dir="auto"><h1 id="2e7cdae9-abba-81c2-9b39-fe01f26271f6" class="">Primary &amp; Secondary Research</h1></div><div style="display:contents" dir="ltr"><figure id="2fbcdae9-abba-80a3-a250-d007e00115d2" class="image"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/image.png"><img style="width:710px" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/image.png"/></a></figure></div><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-817b-998e-e63e0160158c" class="column-list"><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-8114-9818-dc9073d1c26d" style="width:50%" class="column"><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-8109-b7ba-e54481aaf019" class="block-color-purple"><mark class="highlight-default">💬 Featured Interviews</mark></h2></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><mark class="highlight-blue">Toggle for a list of SMEs, interview highlights, quotes, and reflections</mark></summary><div class="indented"><div style="display:contents" dir="ltr"><div id="2e7cdae9-abba-811b-9511-c7266d7e71d2" class="collection-content"><h4 class="collection-title">Subject Matter Experts / Interviews</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><img src="https://www.notion.so/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/calendar_gray.svg" style="width:14px;height:14px;display:block"/></span>Date of Interview</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Role</th></tr></thead><tbody><tr id="2e7cdae9-abba-8108-8125-fe3a05641484"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Zeve%20Cohen%202e7cdae9abba81088125fe3a05641484.html">Zeve Cohen</a></td><td class="cell-FQfB"><time>@October 12, 2025</time></td><td class="cell-C/W}">Designer &amp; Fabricator at MeowWolf</td></tr><tr id="2e7cdae9-abba-81bc-bb54-e6eb36b15288"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Ailsa%20Petrie%202e7cdae9abba81bcbb54e6eb36b15288.html">Ailsa Petrie</a></td><td class="cell-FQfB"><time>@January 23, 2025</time></td><td class="cell-C/W}">Joy Enthusiast, SVA DSI Director of Operations and Academic Advisor</td></tr><tr id="2e7cdae9-abba-81f3-9fe3-df9c834f1fd7"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Jake%20Adams%202e7cdae9abba81f39fe3df9c834f1fd7.html">Jake Adams</a></td><td class="cell-FQfB"><time>@December 9, 2024</time></td><td class="cell-C/W}">Co-Founder of Arke, Professor at RIT</td></tr><tr id="2e7cdae9-abba-810b-b599-c2e8b7941899"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Linda%20Turner%202e7cdae9abba810bb599c2e8b7941899.html">Linda Turner</a></td><td class="cell-FQfB"><time>@December 16, 2024</time></td><td class="cell-C/W}">Art Therapist</td></tr><tr id="2e7cdae9-abba-815b-8a5e-c6ec6ba98ca3"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Jason%20Forrest%202e7cdae9abba815b8a5ec6ec6ba98ca3.html">Jason Forrest</a></td><td class="cell-FQfB"><time>@January 22, 2026</time></td><td class="cell-C/W}">Expert in Data Visualization and Design</td></tr><tr id="2f4cdae9-abba-806d-9d48-cb0033054835"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Sigi%20&amp;%20Masamichi%202f4cdae9abba806d9d48cb0033054835.html">Sigi &amp; Masamichi</a></td><td class="cell-FQfB"><time>@October 12, 2025</time></td><td class="cell-C/W}">Founders of Antenna Design</td></tr><tr id="2e7cdae9-abba-81e8-a050-d16e9d2ed3d2"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Untitled%202e7cdae9abba81e8a050d16e9d2ed3d2.html">Untitled</a></td><td class="cell-FQfB"></td><td class="cell-C/W}"></td></tr><tr id="2e7cdae9-abba-8124-9521-f63f100aec8b"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Untitled%202e7cdae9abba81249521f63f100aec8b.html">Untitled</a></td><td class="cell-FQfB"></td><td class="cell-C/W}"></td></tr><tr id="2e7cdae9-abba-8198-9f4b-d55efa9db103"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Untitled%202e7cdae9abba81989f4bd55efa9db103.html">Untitled</a></td><td class="cell-FQfB"></td><td class="cell-C/W}"></td></tr><tr id="2e7cdae9-abba-8117-8f98-e36e61e8e41c"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Untitled%202e7cdae9abba81178f98e36e61e8e41c.html">Untitled</a></td><td class="cell-FQfB"></td><td class="cell-C/W}"></td></tr><tr id="2e7cdae9-abba-8125-ad9b-d6e9cf75b196"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Untitled%202e7cdae9abba8125ad9bd6e9cf75b196.html">Untitled</a></td><td class="cell-FQfB"></td><td class="cell-C/W}"></td></tr><tr id="2e7cdae9-abba-81b2-b300-cdbb7eddd694"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Untitled%202e7cdae9abba81b2b300cdbb7eddd694.html">Untitled</a></td><td class="cell-FQfB"></td><td class="cell-C/W}"></td></tr><tr id="2e7cdae9-abba-8129-8037-f78d7af27b91"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Untitled%202e7cdae9abba81298037f78d7af27b91.html">Untitled</a></td><td class="cell-FQfB"></td><td class="cell-C/W}"></td></tr><tr id="2e7cdae9-abba-8179-89ad-c80499e360a3"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Untitled%202e7cdae9abba817989adc80499e360a3.html">Untitled</a></td><td class="cell-FQfB"></td><td class="cell-C/W}"></td></tr><tr id="2e7cdae9-abba-819a-9826-f8861b07b9bb"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Untitled%202e7cdae9abba819a9826f8861b07b9bb.html">Untitled</a></td><td class="cell-FQfB"></td><td class="cell-C/W}"></td></tr><tr id="2e7cdae9-abba-8118-b97d-d5fad2637c9f"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Subject%20Matter%20Experts%20Interviews/Untitled%202e7cdae9abba8118b97dd5fad2637c9f.html">Untitled</a></td><td class="cell-FQfB"></td><td class="cell-C/W}"></td></tr></tbody></table><br/><br/></div></div></div></details></div></div></div><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-810b-8180-caa821f55a6d" style="width:50%" class="column"><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-815c-a954-d2fd6bee94e6" class=""><mark class="highlight-default"><mark class="highlight-default_background"> 📚 Select Literature Review </mark></mark></h2></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><mark class="highlight-blue">Toggle for select secondary sources, including books, shows, and research papers</mark></summary><div class="indented"><div style="display:contents" dir="ltr"><div id="2e7cdae9-abba-8119-b120-c83afce76bfb" class="collection-content"><h4 class="collection-title">Literature Review</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><img src="https://www.notion.so/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Author</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Format</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/link_gray.svg" style="width:14px;height:14px;display:block"/></span>Link</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Publication</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Referenced by</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Tags (1)</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/arrow-northeast_gray.svg" style="width:14px;height:14px;display:block"/></span>Tags Database</th></tr></thead><tbody><tr id="2e7cdae9-abba-81ca-ab40-c57b09246c82"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Literature%20Review/Joyful%202e7cdae9abba81caab40c57b09246c82.html">Joyful</a></td><td class="cell-ONMS">Lewis Hyde</td><td class="cell-_:xl"><span class="selected-value select-value-color-yellow">Book</span></td><td class="cell-GjNe"></td><td class="cell-AX\S">1983, Random House</td><td class="cell-K:xk"></td><td class="cell-X[?Z"><span class="selected-value select-value-color-default">Anthropology</span><span class="selected-value select-value-color-gray">Art</span><span class="selected-value select-value-color-green">Gifts</span></td><td class="cell-R&lt;T}">, </td></tr><tr id="2e7cdae9-abba-81f8-ab30-fb7cb68268ab"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Literature%20Review/Art%20of%20Gathering%202e7cdae9abba81f8ab30fb7cb68268ab.html">Art of Gathering</a></td><td class="cell-ONMS">Show created by Scott Dadich</td><td class="cell-_:xl"><span class="selected-value select-value-color-green">Video Episode</span></td><td class="cell-GjNe"></td><td class="cell-AX\S">Netflix</td><td class="cell-K:xk"></td><td class="cell-X[?Z"><span class="selected-value select-value-color-green">Experience Design</span><span class="selected-value select-value-color-yellow">Physical Product Design</span><span class="selected-value select-value-color-pink">Toys</span></td><td class="cell-R&lt;T}">, </td></tr><tr id="2e7cdae9-abba-8153-97e7-fc7b9f9c9d02"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Literature%20Review/Dancing%20in%20the%20Streets%20A%20History%20of%20Collective%20Joy%202e7cdae9abba815397e7fc7b9f9c9d02.html">Dancing in the Streets: A History of Collective Joy</a></td><td class="cell-ONMS">Marcel Mauss</td><td class="cell-_:xl"><span class="selected-value select-value-color-yellow">Book</span></td><td class="cell-GjNe"></td><td class="cell-AX\S">1925, HAU Books</td><td class="cell-K:xk"></td><td class="cell-X[?Z"><span class="selected-value select-value-color-default">Anthropology</span><span class="selected-value select-value-color-green">Gifts</span><span class="selected-value select-value-color-default">Indigenous Traditions</span></td><td class="cell-R&lt;T}">, </td></tr><tr id="2e7cdae9-abba-8110-b623-cba03a977eb4"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Literature%20Review/The%20Happiness%20Project%202e7cdae9abba8110b623cba03a977eb4.html">The Happiness Project</a></td><td class="cell-ONMS">Morgan K. Ward and Susan M. Broniarczyk</td><td class="cell-_:xl"><span class="selected-value select-value-color-gray">Academic Paper</span></td><td class="cell-GjNe"></td><td class="cell-AX\S">Journal of Consumer Research</td><td class="cell-K:xk"></td><td class="cell-X[?Z"><span class="selected-value select-value-color-blue">Consumer Psychology</span><span class="selected-value select-value-color-red">Gift Registry</span><span class="selected-value select-value-color-green">Gifts</span><span class="selected-value select-value-color-gray">Relational Signaling</span></td><td class="cell-R&lt;T}">, </td></tr><tr id="2e7cdae9-abba-8122-9b27-f5d7c395cffe"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Literature%20Review/Maybe%20This%20Will%20Help%202e7cdae9abba81229b27f5d7c395cffe.html">Maybe This Will Help: </a></td><td class="cell-ONMS">Robin Wall Kimmerer</td><td class="cell-_:xl"><span class="selected-value select-value-color-yellow">Book</span></td><td class="cell-GjNe"></td><td class="cell-AX\S">2013, Milkweed Editions</td><td class="cell-K:xk"></td><td class="cell-X[?Z"><span class="selected-value select-value-color-default">Anthropology</span><span class="selected-value select-value-color-green">Gifts</span><span class="selected-value select-value-color-default">Indigenous Traditions</span></td><td class="cell-R&lt;T}">, </td></tr><tr id="2e7cdae9-abba-8134-8a64-fcde4f51c83d"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Literature%20Review/ColorAid%202e7cdae9abba81348a64fcde4f51c83d.html">ColorAid</a></td><td class="cell-ONMS">Morgan K. Ward and Susan M. Broniarczyk</td><td class="cell-_:xl"><span class="selected-value select-value-color-gray">Academic Paper</span></td><td class="cell-GjNe"></td><td class="cell-AX\S">Journal of Consumer Research</td><td class="cell-K:xk"></td><td class="cell-X[?Z"><span class="selected-value select-value-color-blue">Consumer Psychology</span><span class="selected-value select-value-color-red">Gift Registry</span><span class="selected-value select-value-color-green">Gifts</span><span class="selected-value select-value-color-gray">Relational Signaling</span></td><td class="cell-R&lt;T}">, </td></tr><tr id="2e7cdae9-abba-81c9-a32b-e4f6a349b8fb"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Literature%20Review/Little%20Book%20of%20Joys%202e7cdae9abba81c9a32be4f6a349b8fb.html">Little Book of Joys</a></td><td class="cell-ONMS">Sara Schoonmaker</td><td class="cell-_:xl"><span class="selected-value select-value-color-gray">Academic Paper</span></td><td class="cell-GjNe"></td><td class="cell-AX\S">Journal of Consumer Research</td><td class="cell-K:xk"></td><td class="cell-X[?Z"><span class="selected-value select-value-color-brown">Birthdays</span><span class="selected-value select-value-color-blue">Consumer Psychology</span><span class="selected-value select-value-color-green">Gifts</span><span class="selected-value select-value-color-gray">Relational Signaling</span></td><td class="cell-R&lt;T}">, </td></tr><tr id="2e7cdae9-abba-8177-9781-f322536c7c30"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Literature%20Review/Relational%20Gifting%20Conceptual%20Frameworks%20and%20an%20Ag%202e7cdae9abba81779781f322536c7c30.html">Relational Gifting: Conceptual Frameworks and an Agenda for a New Generation of Research</a></td><td class="cell-ONMS">Michelle F. Weinberger, Ernest Baskin, Kunter Gunast</td><td class="cell-_:xl"><span class="selected-value select-value-color-gray">Academic Paper</span><span class="selected-value select-value-color-yellow">Book</span></td><td class="cell-GjNe"></td><td class="cell-AX\S">2024, Oxford University Press on behalf of Journal of Consumer Research, Inc.</td><td class="cell-K:xk"></td><td class="cell-X[?Z"><span class="selected-value select-value-color-default">Anthropology</span><span class="selected-value select-value-color-blue">Consumer Psychology</span><span class="selected-value select-value-color-green">Gifts</span></td><td class="cell-R&lt;T}">, </td></tr></tbody></table><br/><br/></div></div></div></details></div><div style="display:contents" dir="auto"><p id="2f4cdae9-abba-8042-85cf-e94e0239dcad" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8164-8a27-fab3ae64dc6c" class=""><em>Additional thanks to user interviewees not listed here, whose input and insights were invaluable to my work.</em></p></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-8165-8e3e-dafa2a11915c"/></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-811d-b56a-e5420e55d10e" class=""><mark class="highlight-default">Participatory Workshop: User Research</mark></h2></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8138-ad17-c19a94740896" class="image"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/1K1A4805.jpg"><img style="width:720px" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/1K1A4805.jpg"/></a></figure></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8187-91a2-d304a84fc935" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8105-99a7-d9dbfa2daa48" class=""><mark class="highlight-default">In December, I held a workshop to explore the ….</mark><mark class="highlight-gray"> </mark><mark class="highlight-blue"><strong>Check out the process, results, and takeaways below:</strong></mark></p></div><div style="display:contents" dir="ltr"><div id="2e7cdae9-abba-81a9-9aa3-c02d9dba634c" class="collection-content"><h4 class="collection-title">Participatory Research Workshop (User Research) (2)</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><img src="https://www.notion.so/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Timeframe</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>tags</th></tr></thead><tbody><tr id="2e7cdae9-abba-8125-a140-f221bb9f9471"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(2/Workshop%20Planning%20&amp;%20Design%202e7cdae9abba8125a140f221bb9f9471.html"><span class="icon">💭</span>Workshop Planning &amp; Design</a></td><td class="cell-C/W}">4 weeks</td><td class="cell-K{K`"><span class="selected-value select-value-color-gray">Data Visualization</span><span class="selected-value select-value-color-orange">Design Strategy</span><span class="selected-value select-value-color-brown">Facilitation</span></td></tr><tr id="2e7cdae9-abba-8123-bf67-d458b49f5eba"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(2/Workshop%20Gallery%20&amp;%20Synopsis%202e7cdae9abba8123bf67d458b49f5eba.html"><span class="icon">👥</span>Workshop Gallery &amp; Synopsis</a></td><td class="cell-C/W}">1 day</td><td class="cell-K{K`"><span class="selected-value select-value-color-yellow">Experience Design</span><span class="selected-value select-value-color-brown">Facilitation</span><span class="selected-value select-value-color-green">User Research</span></td></tr><tr id="2e7cdae9-abba-81a0-8813-d43eef475c93"><td class="cell-title"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/Participatory%20Research%20Workshop%20(User%20Research)%20(2/Workshop%20Learnings%20&amp;%20Reflection%202e7cdae9abba81a08813d43eef475c93.html"><span class="icon">🗣️</span>Workshop Learnings &amp; Reflection</a></td><td class="cell-C/W}"></td><td class="cell-K{K`"><span class="selected-value select-value-color-orange">Design Strategy</span><span class="selected-value select-value-color-yellow">Experience Design</span><span class="selected-value select-value-color-pink">Systems Mapping</span></td></tr></tbody></table><br/><br/></div></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-81a4-aa32-e47097b4c07f"/></div><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-81bd-b3b8-f3b3f8e74641" class="column-list"><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-81b9-923e-fffa064a597b" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-810a-9bab-c38232da87b9" class="image"><a href="https://media0.giphy.com/media/v1.Y2lkPTc5NDFmZGM2MXVuamczYWM1d283cXdjMGg4cjQyYWdkYW94c2xpamxueTJhYjQ1aiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/s0go9ywxjJg4w/giphy.gif"><img style="width:312.19512195121956px" src="https://media0.giphy.com/media/v1.Y2lkPTc5NDFmZGM2MXVuamczYWM1d283cXdjMGg4cjQyYWdkYW94c2xpamxueTJhYjQ1aiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/s0go9ywxjJg4w/giphy.gif"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2e7cdae9-abba-8100-98b1-c39965d76416" style="width:50%" class="column"><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-8144-a23c-da3ed08992d2" class="block-color-purple"><mark class="highlight-default">Speculative Futures(Coming Soon)</mark></h2></div><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><mark class="highlight-blue">A dystopian &amp; utopian short story anchored around my thesis narrative.</mark></summary><div class="indented"><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8116-81fd-f8c88e05aa2f" class="link-to-page"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/F%20Levels%20Are%20Low%20A%20Dystopian%20Short%20Story%202e7cdae9abba811681fdf8c88e05aa2f.html"><span class="icon">🌡️</span>F Levels Are Low: A Dystopian Short Story</a></figure></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-81fa-923b-ee3e009ae487" class="link-to-page"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/10LCD%20A%20Utopian%20Short%20Story%202e7cdae9abba81fa923bee3e009ae487.html"><span class="icon">🪆</span>10LCD: A Utopian Short Story</a></figure></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8198-8241-ccdd228afa7e" class="link-to-page"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/The%20Matripolis%20Weekly%20Speculative%20Front%20Page%202e7cdae9abba81988241ccdd228afa7e.html"><span class="icon">📰</span>The Matripolis Weekly: Speculative Front Page</a></figure></div></div></details></div><div style="display:contents" dir="auto"><p id="2eacdae9-abba-80fa-af0d-e5fcc8bd9ad4" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-8162-9542-c04c39add47d"/></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-8136-9999-dad65a0667cd" class=""><mark class="highlight-default">Insights + How Might We’s</mark></h2></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-8188-af80-eed9b2bc8934" class="block-color-default_background toggle"><li><details open=""><summary><mark class="highlight-blue"><strong>Toggle to view a matrix of Insights-to-HMWs from the thesis mid-way point.</strong></mark></summary><div style="display:contents" dir="ltr"><table id="2e7cdae9-abba-8113-9421-f5e6f4f1d034" class="simple-table"><thead class="simple-table-header"><div style="display:contents" dir="ltr"><tr id="2e7cdae9-abba-81f8-87e1-c3f6e6d2ef8d"><th id="iJ~U" class="simple-table-header-color simple-table-header" style="width:35px"><mark class="highlight-yellow">#</mark></th><th id="|S^O" class="simple-table-header-color simple-table-header" style="width:178px"><mark class="highlight-yellow">Insights</mark></th><th id="Dajh" class="simple-table-header-color simple-table-header" style="width:173px"><mark class="highlight-yellow">How Might We’s</mark></th><th id="WN@M" class="simple-table-header-color simple-table-header" style="width:349px"><mark class="highlight-yellow">Sources</mark></th></tr></div></thead><tbody><div style="display:contents" dir="ltr"><tr id="2e7cdae9-abba-813b-be2a-e87d30fa5bf9"><th id="iJ~U" class="simple-table-header-color simple-table-header" style="width:35px"><mark class="highlight-yellow"><strong>1</strong></mark></th><td id="|S^O" class="" style="width:178px">Gifts rooted in spontaneity and surprise are often more meaningful, and carry less sense of obligation.</td><td id="Dajh" class="" style="width:173px">How might we design moments that make people feel like children discovering something for the first time?</td><td id="WN@M" class="" style="width:349px"></td></tr></div><div style="display:contents" dir="ltr"><tr id="2e7cdae9-abba-81b5-a554-eec6a917b8c6"><th id="iJ~U" class="simple-table-header-color simple-table-header" style="width:35px"><mark class="highlight-yellow"><strong>2</strong></mark></th><td id="|S^O" class="" style="width:178px">Shared frustration builds community.</td><td id="Dajh" class="" style="width:173px">How might we design spaces where strangers can safely share their frustration?</td><td id="WN@M" class="" style="width:349px"></td></tr></div><div style="display:contents" dir="ltr"><tr id="2e7cdae9-abba-8148-b90a-d8b5a0791562"><th id="iJ~U" class="simple-table-header-color simple-table-header" style="width:35px"><mark class="highlight-yellow"><strong>3</strong></mark></th><td id="|S^O" class="" style="width:178px">The sensations and experiences that bring people joy are closely tied to their inner child.</td><td id="Dajh" class="" style="width:173px">How might we design deviations that feel discovered rather than imposed?</td><td id="WN@M" class="" style="width:349px"></td></tr></div><div style="display:contents" dir="ltr"><tr id="2e7cdae9-abba-819d-8bc8-cf0ec6ab5d41"><th id="iJ~U" class="simple-table-header-color simple-table-header" style="width:35px"><mark class="highlight-yellow"><strong>4</strong></mark></th><td id="|S^O" class="" style="width:178px">Sensory features speak before our minds catch up.</td><td id="Dajh" class="" style="width:173px">How might we make nature impossible to miss or ignore on a daily commute?</td><td id="WN@M" class="" style="width:349px"></td></tr></div><div style="display:contents" dir="ltr"><tr id="2e7cdae9-abba-811b-8d3c-cfb593cf50ef"><th id="iJ~U" class="simple-table-header-color simple-table-header" style="width:35px"><mark class="highlight-yellow"><strong>5</strong></mark></th><td id="|S^O" class="" style="width:178px">While joy can happen in isolation, it multiplies when witnessed.</td><td id="Dajh" class="" style="width:173px">How might we design small shared moments of joy?</td><td id="WN@M" class="" style="width:349px"></td></tr></div><div style="display:contents" dir="ltr"><tr id="2e7cdae9-abba-813b-8103-ee367f0ecc21"><th id="iJ~U" class="simple-table-header-color simple-table-header" style="width:35px"><mark class="highlight-yellow"><strong>6</strong></mark></th><td id="|S^O" class="" style="width:178px"></td><td id="Dajh" class="" style="width:173px"></td><td id="WN@M" class="" style="width:349px"></td></tr></div></tbody></table></div></details></li></ul></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-81db-8846-d1f4576e221b" class="image"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/IMG_5768.jpg"><img style="width:323.0722587165235px" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/IMG_5768.jpg"/></a><figcaption>Organizing Insights &amp; How-Might-We’s (December 2025)</figcaption></figure></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-8139-9dba-f54ac4e05df4"/></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-819e-b20b-e3f6c44d046b" class="block-color-purple"><mark class="highlight-default">Thesis Narrative</mark></h2></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-8167-a78b-ebef3805100b" class="toggle"><li><details open=""><summary><mark class="highlight-blue"><strong>Toggle to read</strong></mark></summary><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-8102-8b62-e3524d516c9b" class=""><em>December 2025</em></p></div><div style="display:contents" dir="auto"><p id="dacf11ae-d7a7-4f62-b88e-bb296bb08f26" class="">This thesis explores how small, tangible, emotionally honest interventions in public and commuting spaces can create brief moments of joy for stressed urban residents, particularly young adults in New York City. In a city where about 13% of adults—roughly 845,000 people—live with depression and nearly one in four experience a mental health disorder in a given year, everyday mental strain is not abstract; it shapes how people move, relate, and protect themselves in public space. Long commutes, crowding, overwork, and social comparison leave many New Yorkers feeling rushed, guarded, and emotionally numb rather than connected or alive.<br/>Drawing on Positive Design, this work treats joy as one contributor to human flourishing, understood as people developing as individuals, living to their fullest potential, and acting in the best interests of society. Joy here is distinct from happiness. Happiness is longer-term life satisfaction and meaning; joy is brief and often embodied: a 30‑second softening when something breaks routine, feels emotionally safe, and is often shared or co‑witnessed with others. In Ingrid Fetell Lee’s work on “aesthetics of joy,” playful forms, color, abundance, and nature reliably trigger this kind of momentary uplift. Barbara Ehrenreich’s history of collective joy shows how shared, synchronized experiences can bind people into temporary communities. Together, these sources suggest that joy is not frivolous; it is a social and spatial phenomenon with real implications for well‑being.<br/>To ground these ideas, the project combines secondary research with qualitative work: interviews with architects, designers, and creative practitioners; observational visits to places like PopMart, Hekate cafe, and Storm King; and participatory studies such as “Balloon Day” and the “Routes to Joy” workshop. Foundational insights from experts highlight three recurring themes: joy is closely tied to our “inner child” and states of playful discovery; emotional safety and comfort zones enable positive risk‑taking; and encounters with nature, light, and good proportion soften people and make them more present. Participatory research with New Yorkers adds further nuance: deviations from routine create aliveness, joy multiplies when witnessed, creatures and creature‑like forms disarm people and invite connection, sensory features speak before the mind catches up, and even shared frustration can build community when acknowledged together.<br/>From this, the thesis proposes a simple theory of joy in public space: spontaneous moment + sensory feature + collaboration or co‑witnessing = joyful experience. Over time, joyful experiences can feed what this project calls a “society wheel”: joyful experience → positive emotions → collaboration and communication with others → joyful experiences for others. The design focus becomes clear: How might small, non‑commercial, emotionally honest interventions in commuting spaces gently disrupt autopilot, feel safe and human‑made, and invite shared noticing rather than performance?</p></div><div style="display:contents" dir="auto"><p id="2e7cdae9-abba-818b-a1cd-caf45af56970" class="">
+</p></div></details></li></ul></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-8120-ae36-fa1ab2997618" class="">Mapping &amp; Frameworks</h2></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-813e-a978-e12964d4e38b" class="toggle"><li><details open=""><summary><mark class="highlight-blue"><strong>Toggle to view</strong></mark></summary><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8105-8888-cbede1d47914" class="image"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/joymap.png"><img style="width:3513px" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/joymap.png"/></a><figcaption>Mind Map of the Places that Bring People Joy, Sofia Grytenko</figcaption></figure></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8163-b6af-d5070685446e" class="image"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/thepassingofjoy.png"><img style="width:679.9921875px" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/thepassingofjoy.png"/></a><figcaption>How to Achieve a More Joyful Society, Sofia Grytsenko</figcaption></figure></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8119-bfae-d928d0f06326" class="image"><a href="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/interventionmap.png"><img style="width:2996px" src="Foundations%20of%20a%20Flourishing%20Society%20A%20Joyful%20Expl/interventionmap.png"/></a><figcaption>Journey map of the an individual’s emotions throughout the day, Sofia Grytsenko</figcaption></figure></div></details></li></ul></div><div style="display:contents" dir="auto"><h2 id="2e7cdae9-abba-8168-8774-c6c39dbd647c" class="">Circle Back Through Section Index</h2></div><div style="display:contents" dir="auto"><ul id="2e7cdae9-abba-81ab-b997-f40049a968e0" class="toggle"><li><details open=""><summary><mark class="highlight-blue">Toggle for Contents</mark></summary><div style="display:contents" dir="ltr"><nav id="2e7cdae9-abba-817a-9117-e004b97ed45f" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2e7cdae9-abba-810a-84ce-e1d8e5a83695"><mark class="highlight-default">My MFA thesis explores how</mark> design influences everyday emotions and experiences and how that influence can be used positively.</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2e7cdae9-abba-81cf-8a71-f60f55161dc5"><mark class="highlight-default">About Me </mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2e7cdae9-abba-81fe-956d-d798b7837c97"><mark class="highlight-default">Key Term Glossary</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2e7cdae9-abba-8101-a429-c115b175bd5e">Thesis Blog<mark class="highlight-yellow"> </mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2e7cdae9-abba-81bd-ab8e-f4b66184f9ab"><mark class="highlight-default">Acknowledgements</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2e7cdae9-abba-812c-88e2-fbeeb6472841">Final Presentation</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2e7cdae9-abba-81c5-bd5e-e6bdceeec8fa"><strong>“To this day, and no doubt for good reasons, suffering remains the almost exclusive preoccupation of professional psychology. Journals in the field have published forty-five thousand articles in the last thirty years on depression, but only four hundred on joy”</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-81a4-9f73-ca11f2b08706">Explorations of Joy: A Series</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2e7cdae9-abba-810b-8e39-d37555d61ff4">“<strong>We wanted people to get back to their primal state of learning, like they were babies again discovering the world for the first time. </strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-8150-a356-dd9d63515d66"><mark class="highlight-default">3D Product Design (Coming Soon)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2e7cdae9-abba-813a-a6dc-cfc5c3d82461"><mark class="highlight-blue">See more</mark></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-8118-bb52-e15b32dc66a3"><mark class="highlight-default">Service Design (Coming Soon)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2e7cdae9-abba-8185-b86e-cbbc93cfd070"><mark class="highlight-blue">See more</mark></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-813f-97b3-e1e7ed9b357f"><mark class="highlight-default">Experience Design (Coming Soon)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2e7cdae9-abba-813f-a8ea-c5c1d61d5b2c"><mark class="highlight-blue">See more</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2e7cdae9-abba-8120-90be-cd753e387200"><strong>“Adults are more emotionally complex then children, allowing for designers to tap into those complex emotions.”</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-814e-9112-d4378c8cd4bf"><mark class="highlight-default">Interaction Design (Coming Soon)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2e7cdae9-abba-81f9-b16e-ecfbeb0c1657"><mark class="highlight-blue">See more</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2e7cdae9-abba-81c2-9b39-fe01f26271f6">Primary &amp; Secondary Research</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-8109-b7ba-e54481aaf019"><mark class="highlight-default">💬 Featured Interviews</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2e7cdae9-abba-8123-b5fd-eaff254b949a"><mark class="highlight-blue">Toggle for a list of SMEs, interview highlights, quotes, and reflections</mark></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-815c-a954-d2fd6bee94e6"><mark class="highlight-default"><mark class="highlight-default_background"> 📚 Select Literature Review </mark></mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2e7cdae9-abba-8108-b2a6-e000e02b79e4"><mark class="highlight-blue">Toggle for select secondary sources, including books, shows, and research papers</mark></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-811d-b56a-e5420e55d10e"><mark class="highlight-default">Participatory Workshop: User Research</mark></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-8144-a23c-da3ed08992d2"><mark class="highlight-default">Speculative Futures(Coming Soon)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2e7cdae9-abba-81b7-b116-cffd95d48663"><mark class="highlight-blue">A dystopian &amp; utopian short story anchored around my thesis narrative.</mark></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-8136-9999-dad65a0667cd"><mark class="highlight-default">Insights + How Might We’s</mark></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-819e-b20b-e3f6c44d046b"><mark class="highlight-default">Thesis Narrative</mark></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-8120-ae36-fa1ab2997618">Mapping &amp; Frameworks</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2e7cdae9-abba-8168-8774-c6c39dbd647c">Circle Back Through Section Index</a></div></nav></div></details></li></ul></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-81dc-9f3b-e0fc3d1d0307"/></div><div style="display:contents" dir="ltr"><figure id="2e7cdae9-abba-8122-a29f-cc76b98be391" class="image"><a href="https://media2.giphy.com/media/v1.Y2lkPTc5NDFmZGM2bHJzdmlpeGU4Z3pmOHk4YjU4dTFrOWQyaGY4N2R3Z3VkcjRwZGN0byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/sfjfPOe8DKptm/giphy.gif"><img style="width:225px" src="https://media2.giphy.com/media/v1.Y2lkPTc5NDFmZGM2bHJzdmlpeGU4Z3pmOHk4YjU4dTFrOWQyaGY4N2R3Z3VkcjRwZGN0byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/sfjfPOe8DKptm/giphy.gif"/></a><figcaption>CAPTION</figcaption></figure></div><div style="display:contents" dir="auto"><hr id="2e7cdae9-abba-8181-bccc-c4a37be7378c"/></div><div style="display:contents" dir="auto"><p id="2e8cdae9-abba-808b-a388-cb49f1ffe1fd" class="">
+</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
